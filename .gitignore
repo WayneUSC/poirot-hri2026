@@ -10,6 +10,11 @@ android-script-distributor/*.apk
 ios-gaze-display/**/xcuserdata/
 ios-gaze-display/**/*.xcuserstate
 ios-gaze-display/DerivedData/
+ios-script-distributor/**/xcuserdata/
+ios-script-distributor/**/*.xcuserstate
+ios-script-distributor/DerivedData/
+ios-script-distributor/Pods/
+ios-script-distributor/**/GoogleService-Info.plist
 
 # Python
 __pycache__/

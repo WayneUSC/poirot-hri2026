@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23DB0300E1D7CBB3271F7025 /* Pods_Scripts_Distributor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507299E00FF9FCA877826F0F /* Pods_Scripts_Distributor.framework */; };
+		B00139D32CD6897200DD4AC6 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00139D22CD6897200DD4AC6 /* Script.swift */; };
+		B00139D52CD68F1B00DD4AC6 /* 头颅们的失眠夜.json in Resources */ = {isa = PBXBuildFile; fileRef = B00139D42CD68F1B00DD4AC6 /* 头颅们的失眠夜.json */; };
+		B0025AE62CD66124002B8BDD /* CluesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0025AE52CD66124002B8BDD /* CluesViewController.swift */; };
+		B0025AE82CD661BA002B8BDD /* ClueImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0025AE72CD661BA002B8BDD /* ClueImageCell.swift */; };
+		B013651A2CA3D502008A97BD /* RoleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01365192CA3D502008A97BD /* RoleSelectionViewController.swift */; };
+		B013651E2CA3D5F9008A97BD /* RoleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013651D2CA3D5F9008A97BD /* RoleCell.swift */; };
+		B016F76F2C80AAA9004F3F5E /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016F76E2C80AAA9004F3F5E /* SectionHeader.swift */; };
+		B016F7712C80B1F0004F3F5E /* ScriptsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016F7702C80B1F0004F3F5E /* ScriptsDetailController.swift */; };
+		B01EBCF72D363E9600F795B1 /* 关于北原千夜的一切.json in Resources */ = {isa = PBXBuildFile; fileRef = B01EBCF62D363E9600F795B1 /* 关于北原千夜的一切.json */; };
+		B01F03912C92D54700E6D242 /* BigPicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F03902C92D54700E6D242 /* BigPicController.swift */; };
+		B02E3F9F2C80E4E400B92EB6 /* ScriptsMemberCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E3F9E2C80E4E400B92EB6 /* ScriptsMemberCellController.swift */; };
+		B04F1D402D0FE8E400EE4B4F /* All About Kichiya Kitahara.json in Resources */ = {isa = PBXBuildFile; fileRef = B04F1D3F2D0FE8E400EE4B4F /* All About Kichiya Kitahara.json */; };
+		B04F1D422D0FEE0000EE4B4F /* The Sleepless Night of the Heads.json in Resources */ = {isa = PBXBuildFile; fileRef = B04F1D412D0FEE0000EE4B4F /* The Sleepless Night of the Heads.json */; };
+		B04F1D442D0FEE0600EE4B4F /* The Tale of the Desert.json in Resources */ = {isa = PBXBuildFile; fileRef = B04F1D432D0FEE0600EE4B4F /* The Tale of the Desert.json */; };
+		B087CDFA2D33C645005C2DF1 /* Shadows of Ashwick Manor.json in Resources */ = {isa = PBXBuildFile; fileRef = B087CDF92D33C644005C2DF1 /* Shadows of Ashwick Manor.json */; };
+		B087CDFC2D33C9AF005C2DF1 /* Crimson Secrets on a Stormy Night.json in Resources */ = {isa = PBXBuildFile; fileRef = B087CDFB2D33C9AE005C2DF1 /* Crimson Secrets on a Stormy Night.json */; };
+		B0925CF72CA402DC001AD3A0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0925CF62CA402DC001AD3A0 /* GameViewController.swift */; };
+		B0AC86692C7EE37E00F58347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC86682C7EE37E00F58347 /* AppDelegate.swift */; };
+		B0AC866B2C7EE37E00F58347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC866A2C7EE37E00F58347 /* SceneDelegate.swift */; };
+		B0AC86702C7EE37E00F58347 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0AC866F2C7EE37E00F58347 /* Base */; };
+		B0AC86722C7EE38100F58347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AC86712C7EE38100F58347 /* Assets.xcassets */; };
+		B0AC86752C7EE38100F58347 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0AC86742C7EE38100F58347 /* Base */; };
+		B0AC867D2C7EE49E00F58347 /* ScriptsLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC867C2C7EE49E00F58347 /* ScriptsLibraryController.swift */; };
+		B0AC867F2C7EE97B00F58347 /* ScriptsLibraryCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC867E2C7EE97B00F58347 /* ScriptsLibraryCellController.swift */; };
+		B0CD3DBA2CDA255C00DE900B /* 大漠谣.json in Resources */ = {isa = PBXBuildFile; fileRef = B0CD3DB92CDA255C00DE900B /* 大漠谣.json */; };
+		B0DDEF892DDC8BB2008A9196 /* 审判四重奏-A.json in Resources */ = {isa = PBXBuildFile; fileRef = B0DDEF882DDC8BB2008A9196 /* 审判四重奏-A.json */; };
+		B0DDEF8B2DDC8FAA008A9196 /* Quartet of Judgment-A.json in Resources */ = {isa = PBXBuildFile; fileRef = B0DDEF8A2DDC8FAA008A9196 /* Quartet of Judgment-A.json */; };
+		B0DDEF8E2DDC9313008A9196 /* 审判四重奏-B.json in Resources */ = {isa = PBXBuildFile; fileRef = B0DDEF8D2DDC9313008A9196 /* 审判四重奏-B.json */; };
+		B0DDEF8F2DDC9313008A9196 /* Quartet of Judgment-B.json in Resources */ = {isa = PBXBuildFile; fileRef = B0DDEF8C2DDC9313008A9196 /* Quartet of Judgment-B.json */; };
+		B0EDBC952CA1B00400354851 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDBC942CA1B00400354851 /* CreateRoomViewController.swift */; };
+		B0EDBC972CA1B09800354851 /* JoinRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDBC962CA1B09800354851 /* JoinRoomViewController.swift */; };
+		B0F55EEF2DD481010049313C /* Quartet of Judgment.json in Resources */ = {isa = PBXBuildFile; fileRef = B0F55EED2DD481000049313C /* Quartet of Judgment.json */; };
+		B0F55EF02DD481010049313C /* 审判四重奏.json in Resources */ = {isa = PBXBuildFile; fileRef = B0F55EEE2DD481000049313C /* 审判四重奏.json */; };
+		B0F8F3392D8140EA00E6AD7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F8F3382D8140EA00E6AD7C /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		507299E00FF9FCA877826F0F /* Pods_Scripts_Distributor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scripts_Distributor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B29000DCC307BE8BF5D9A5 /* Pods-Scripts Distributor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scripts Distributor.release.xcconfig"; path = "Target Support Files/Pods-Scripts Distributor/Pods-Scripts Distributor.release.xcconfig"; sourceTree = "<group>"; };
+		B00139D22CD6897200DD4AC6 /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		B00139D42CD68F1B00DD4AC6 /* 头颅们的失眠夜.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "头颅们的失眠夜.json"; sourceTree = "<group>"; };
+		B0025AE52CD66124002B8BDD /* CluesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CluesViewController.swift; sourceTree = "<group>"; };
+		B0025AE72CD661BA002B8BDD /* ClueImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueImageCell.swift; sourceTree = "<group>"; };
+		B01365192CA3D502008A97BD /* RoleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionViewController.swift; sourceTree = "<group>"; };
+		B013651D2CA3D5F9008A97BD /* RoleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleCell.swift; sourceTree = "<group>"; };
+		B016F76E2C80AAA9004F3F5E /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		B016F7702C80B1F0004F3F5E /* ScriptsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsDetailController.swift; sourceTree = "<group>"; };
+		B01EBCF62D363E9600F795B1 /* 关于北原千夜的一切.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "关于北原千夜的一切.json"; sourceTree = "<group>"; };
+		B01F03902C92D54700E6D242 /* BigPicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPicController.swift; sourceTree = "<group>"; };
+		B02E3F9E2C80E4E400B92EB6 /* ScriptsMemberCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsMemberCellController.swift; sourceTree = "<group>"; };
+		B04F1D3F2D0FE8E400EE4B4F /* All About Kichiya Kitahara.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "All About Kichiya Kitahara.json"; sourceTree = "<group>"; };
+		B04F1D412D0FEE0000EE4B4F /* The Sleepless Night of the Heads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "The Sleepless Night of the Heads.json"; sourceTree = "<group>"; };
+		B04F1D432D0FEE0600EE4B4F /* The Tale of the Desert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "The Tale of the Desert.json"; sourceTree = "<group>"; };
+		B087CDF92D33C644005C2DF1 /* Shadows of Ashwick Manor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Shadows of Ashwick Manor.json"; sourceTree = "<group>"; };
+		B087CDFB2D33C9AE005C2DF1 /* Crimson Secrets on a Stormy Night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Crimson Secrets on a Stormy Night.json"; sourceTree = "<group>"; };
+		B0925CF62CA402DC001AD3A0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B0AC86652C7EE37E00F58347 /* Scripts Distributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scripts Distributor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AC86682C7EE37E00F58347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0AC866A2C7EE37E00F58347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0AC866F2C7EE37E00F58347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0AC86712C7EE38100F58347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0AC86742C7EE38100F58347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0AC86762C7EE38100F58347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AC867C2C7EE49E00F58347 /* ScriptsLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsLibraryController.swift; sourceTree = "<group>"; };
+		B0AC867E2C7EE97B00F58347 /* ScriptsLibraryCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsLibraryCellController.swift; sourceTree = "<group>"; };
+		B0CD3DB92CDA255C00DE900B /* 大漠谣.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "大漠谣.json"; sourceTree = "<group>"; };
+		B0DDEF882DDC8BB2008A9196 /* 审判四重奏-A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "审判四重奏-A.json"; sourceTree = "<group>"; };
+		B0DDEF8A2DDC8FAA008A9196 /* Quartet of Judgment-A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Quartet of Judgment-A.json"; sourceTree = "<group>"; };
+		B0DDEF8C2DDC9313008A9196 /* Quartet of Judgment-B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Quartet of Judgment-B.json"; sourceTree = "<group>"; };
+		B0DDEF8D2DDC9313008A9196 /* 审判四重奏-B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "审判四重奏-B.json"; sourceTree = "<group>"; };
+		B0EDBC942CA1B00400354851 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		B0EDBC962CA1B09800354851 /* JoinRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRoomViewController.swift; sourceTree = "<group>"; };
+		B0F55EED2DD481000049313C /* Quartet of Judgment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Quartet of Judgment.json"; sourceTree = "<group>"; };
+		B0F55EEE2DD481000049313C /* 审判四重奏.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "审判四重奏.json"; sourceTree = "<group>"; };
+		B0F8F3382D8140EA00E6AD7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB5E141EC2E24E95E3CF1022 /* Pods-Scripts Distributor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scripts Distributor.debug.xcconfig"; path = "Target Support Files/Pods-Scripts Distributor/Pods-Scripts Distributor.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0AC86622C7EE37E00F58347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DB0300E1D7CBB3271F7025 /* Pods_Scripts_Distributor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D67BAC0CB2502330C656462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				507299E00FF9FCA877826F0F /* Pods_Scripts_Distributor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0AC865C2C7EE37E00F58347 = {
+			isa = PBXGroup;
+			children = (
+				B0AC86672C7EE37E00F58347 /* Scripts Distributor */,
+				B0AC86662C7EE37E00F58347 /* Products */,
+				EC12667BD773B2C025ED9863 /* Pods */,
+				1D67BAC0CB2502330C656462 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0AC86662C7EE37E00F58347 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC86652C7EE37E00F58347 /* Scripts Distributor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0AC86672C7EE37E00F58347 /* Scripts Distributor */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC86682C7EE37E00F58347 /* AppDelegate.swift */,
+				B0AC866A2C7EE37E00F58347 /* SceneDelegate.swift */,
+				B0AC867C2C7EE49E00F58347 /* ScriptsLibraryController.swift */,
+				B0AC867E2C7EE97B00F58347 /* ScriptsLibraryCellController.swift */,
+				B016F76E2C80AAA9004F3F5E /* SectionHeader.swift */,
+				B016F7702C80B1F0004F3F5E /* ScriptsDetailController.swift */,
+				B02E3F9E2C80E4E400B92EB6 /* ScriptsMemberCellController.swift */,
+				B01F03902C92D54700E6D242 /* BigPicController.swift */,
+				B0EDBC942CA1B00400354851 /* CreateRoomViewController.swift */,
+				B0EDBC962CA1B09800354851 /* JoinRoomViewController.swift */,
+				B01365192CA3D502008A97BD /* RoleSelectionViewController.swift */,
+				B00139D22CD6897200DD4AC6 /* Script.swift */,
+				B013651D2CA3D5F9008A97BD /* RoleCell.swift */,
+				B0925CF62CA402DC001AD3A0 /* GameViewController.swift */,
+				B0025AE52CD66124002B8BDD /* CluesViewController.swift */,
+				B0025AE72CD661BA002B8BDD /* ClueImageCell.swift */,
+				B0AC866E2C7EE37E00F58347 /* Main.storyboard */,
+				B0AC86712C7EE38100F58347 /* Assets.xcassets */,
+				B0AC86732C7EE38100F58347 /* LaunchScreen.storyboard */,
+				B04F1D432D0FEE0600EE4B4F /* The Tale of the Desert.json */,
+				B0CD3DB92CDA255C00DE900B /* 大漠谣.json */,
+				B0DDEF882DDC8BB2008A9196 /* 审判四重奏-A.json */,
+				B0DDEF8D2DDC9313008A9196 /* 审判四重奏-B.json */,
+				B0DDEF8A2DDC8FAA008A9196 /* Quartet of Judgment-A.json */,
+				B0DDEF8C2DDC9313008A9196 /* Quartet of Judgment-B.json */,
+				B04F1D3F2D0FE8E400EE4B4F /* All About Kichiya Kitahara.json */,
+				B087CDF92D33C644005C2DF1 /* Shadows of Ashwick Manor.json */,
+				B01EBCF62D363E9600F795B1 /* 关于北原千夜的一切.json */,
+				B04F1D412D0FEE0000EE4B4F /* The Sleepless Night of the Heads.json */,
+				B087CDFB2D33C9AE005C2DF1 /* Crimson Secrets on a Stormy Night.json */,
+				B00139D42CD68F1B00DD4AC6 /* 头颅们的失眠夜.json */,
+				B0F55EED2DD481000049313C /* Quartet of Judgment.json */,
+				B0F55EEE2DD481000049313C /* 审判四重奏.json */,
+				B0AC86762C7EE38100F58347 /* Info.plist */,
+				B0F8F3382D8140EA00E6AD7C /* GoogleService-Info.plist */,
+			);
+			path = "Scripts Distributor";
+			sourceTree = "<group>";
+		};
+		EC12667BD773B2C025ED9863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB5E141EC2E24E95E3CF1022 /* Pods-Scripts Distributor.debug.xcconfig */,
+				80B29000DCC307BE8BF5D9A5 /* Pods-Scripts Distributor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0AC86642C7EE37E00F58347 /* Scripts Distributor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AC86792C7EE38100F58347 /* Build configuration list for PBXNativeTarget "Scripts Distributor" */;
+			buildPhases = (
+				DA8B2A197ABAA8D39B8EAF9C /* [CP] Check Pods Manifest.lock */,
+				B0AC86612C7EE37E00F58347 /* Sources */,
+				B0AC86622C7EE37E00F58347 /* Frameworks */,
+				B0AC86632C7EE37E00F58347 /* Resources */,
+				021993925EE3242B0BFB41DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scripts Distributor";
+			productName = "Scripts Distributor";
+			productReference = B0AC86652C7EE37E00F58347 /* Scripts Distributor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0AC865D2C7EE37E00F58347 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B0AC86642C7EE37E00F58347 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = B0AC86602C7EE37E00F58347 /* Build configuration list for PBXProject "Scripts Distributor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0AC865C2C7EE37E00F58347;
+			productRefGroup = B0AC86662C7EE37E00F58347 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0AC86642C7EE37E00F58347 /* Scripts Distributor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0AC86632C7EE37E00F58347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F55EEF2DD481010049313C /* Quartet of Judgment.json in Resources */,
+				B0F55EF02DD481010049313C /* 审判四重奏.json in Resources */,
+				B087CDFC2D33C9AF005C2DF1 /* Crimson Secrets on a Stormy Night.json in Resources */,
+				B0AC86722C7EE38100F58347 /* Assets.xcassets in Resources */,
+				B01EBCF72D363E9600F795B1 /* 关于北原千夜的一切.json in Resources */,
+				B0DDEF8E2DDC9313008A9196 /* 审判四重奏-B.json in Resources */,
+				B0DDEF8F2DDC9313008A9196 /* Quartet of Judgment-B.json in Resources */,
+				B04F1D402D0FE8E400EE4B4F /* All About Kichiya Kitahara.json in Resources */,
+				B04F1D422D0FEE0000EE4B4F /* The Sleepless Night of the Heads.json in Resources */,
+				B0DDEF892DDC8BB2008A9196 /* 审判四重奏-A.json in Resources */,
+				B0F8F3392D8140EA00E6AD7C /* GoogleService-Info.plist in Resources */,
+				B0DDEF8B2DDC8FAA008A9196 /* Quartet of Judgment-A.json in Resources */,
+				B0AC86752C7EE38100F58347 /* Base in Resources */,
+				B00139D52CD68F1B00DD4AC6 /* 头颅们的失眠夜.json in Resources */,
+				B0CD3DBA2CDA255C00DE900B /* 大漠谣.json in Resources */,
+				B0AC86702C7EE37E00F58347 /* Base in Resources */,
+				B087CDFA2D33C645005C2DF1 /* Shadows of Ashwick Manor.json in Resources */,
+				B04F1D442D0FEE0600EE4B4F /* The Tale of the Desert.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		021993925EE3242B0BFB41DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scripts Distributor/Pods-Scripts Distributor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scripts Distributor/Pods-Scripts Distributor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scripts Distributor/Pods-Scripts Distributor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8B2A197ABAA8D39B8EAF9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scripts Distributor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0AC86612C7EE37E00F58347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AC867D2C7EE49E00F58347 /* ScriptsLibraryController.swift in Sources */,
+				B0025AE82CD661BA002B8BDD /* ClueImageCell.swift in Sources */,
+				B02E3F9F2C80E4E400B92EB6 /* ScriptsMemberCellController.swift in Sources */,
+				B0AC86692C7EE37E00F58347 /* AppDelegate.swift in Sources */,
+				B013651E2CA3D5F9008A97BD /* RoleCell.swift in Sources */,
+				B0925CF72CA402DC001AD3A0 /* GameViewController.swift in Sources */,
+				B01F03912C92D54700E6D242 /* BigPicController.swift in Sources */,
+				B013651A2CA3D502008A97BD /* RoleSelectionViewController.swift in Sources */,
+				B0EDBC952CA1B00400354851 /* CreateRoomViewController.swift in Sources */,
+				B0EDBC972CA1B09800354851 /* JoinRoomViewController.swift in Sources */,
+				B016F76F2C80AAA9004F3F5E /* SectionHeader.swift in Sources */,
+				B016F7712C80B1F0004F3F5E /* ScriptsDetailController.swift in Sources */,
+				B00139D32CD6897200DD4AC6 /* Script.swift in Sources */,
+				B0025AE62CD66124002B8BDD /* CluesViewController.swift in Sources */,
+				B0AC867F2C7EE97B00F58347 /* ScriptsLibraryCellController.swift in Sources */,
+				B0AC866B2C7EE37E00F58347 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0AC866E2C7EE37E00F58347 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AC866F2C7EE37E00F58347 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0AC86732C7EE38100F58347 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AC86742C7EE38100F58347 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0AC86772C7EE38100F58347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0AC86782C7EE38100F58347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0AC867A2C7EE38100F58347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5E141EC2E24E95E3CF1022 /* Pods-Scripts Distributor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WVB8K7CC7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scripts Distributor/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Agatha Storyteller";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wayne.Scripts-Distributor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0AC867B2C7EE38100F58347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B29000DCC307BE8BF5D9A5 /* Pods-Scripts Distributor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WVB8K7CC7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scripts Distributor/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Agatha Storyteller";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wayne.Scripts-Distributor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0AC86602C7EE37E00F58347 /* Build configuration list for PBXProject "Scripts Distributor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AC86772C7EE38100F58347 /* Debug */,
+				B0AC86782C7EE38100F58347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AC86792C7EE38100F58347 /* Build configuration list for PBXNativeTarget "Scripts Distributor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AC867A2C7EE38100F58347 /* Debug */,
+				B0AC867B2C7EE38100F58347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0AC865D2C7EE37E00F58347 /* Project object */;
+}

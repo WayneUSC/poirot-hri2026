@@ -11,6 +11,7 @@ The package focuses on reproducibility of the robot platform, companion app, tan
 
 ```text
 android-script-distributor/   Android companion app for room setup, role selection, scripts, and clues
+ios-script-distributor/       iOS companion app actually used in the HRI study
 ios-gaze-display/             iPhone-based gaze and blinking display used as POIROT's face
 face-tracking/                Python prototypes for face tracking and robot-eye rendering
 hardware/clue-dispenser/      BOM and implementation notes for the card dispenser
@@ -22,7 +23,8 @@ paper/                        Camera-ready paper, appendix, and source text
 
 ## What Is Included
 
-- Android app source for the digitally mediated script/clue condition.
+- iOS app source actually used for the study's script/clue distribution workflow.
+- Android app source retained as a later/parallel reference implementation.
 - iOS gaze-display app using Apple Vision face landmarks, smoothing, and randomized blinking.
 - Python face-tracking prototypes based on OpenCV and MTCNN/facenet-pytorch.
 - MATLAB simulations for tabletop clue delivery and RRT-Connect path planning.
@@ -34,7 +36,8 @@ paper/                        Camera-ready paper, appendix, and source text
 
 Some assets are intentionally represented by placeholders:
 
-- `android-script-distributor/app/google-services.json`: create this from your own Firebase project.
+- `ios-script-distributor/Scripts Distributor/GoogleService-Info.plist`: create this from your own Firebase project.
+- `android-script-distributor/app/google-services.json`: create this only if you want to run the Android reference implementation.
 - Role-script PDFs and clue-card images: replace the placeholder URLs in `app/src/main/assets/Scripts/*.json`.
 - Full robot CAD source: the local project currently contains photos and appendix diagrams, but not the final POIROT shell CAD/STL.
 - Voice-agent deployment: this repository documents the Xiaozhi/ESP32-S3 pipeline, but does not include private model/provider credentials.
@@ -43,10 +46,11 @@ Some assets are intentionally represented by placeholders:
 
 1. Clone this repository.
 2. Read `docs/reproduction-guide.md` for the full system setup.
-3. Configure Firebase for the Android app using `android-script-distributor/app/google-services.json.example`.
-4. Open `ios-gaze-display/EyeTrackingApp.xcodeproj` in Xcode and run it on an iPhone with a front camera.
-5. Build the card dispenser following `hardware/clue-dispenser/README.md`.
-6. Run the study using `experiment-materials/experimental-protocol.md`.
+3. Configure Firebase for the iOS script distributor using `ios-script-distributor/Scripts Distributor/GoogleService-Info.plist.example`.
+4. Run `pod install` in `ios-script-distributor/`, then open `Scripts Distributor.xcworkspace`.
+5. Open `ios-gaze-display/EyeTrackingApp.xcodeproj` in Xcode and run it on an iPhone with a front camera.
+6. Build the card dispenser following `hardware/clue-dispenser/README.md`.
+7. Run the study using `experiment-materials/experimental-protocol.md`.
 
 ## Citation
 

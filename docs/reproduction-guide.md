@@ -9,7 +9,7 @@ POIROT combines five subsystems:
 1. A physical tabletop robot body with differential-drive base, 2-DOF arms, embedded iPhone face display, and abdomen-mounted card dispenser.
 2. An iOS gaze display that tracks nearby faces and animates robot eyes.
 3. A physical clue-card dispenser that delivers laminated cards with a friction roller.
-4. An Android companion app for script reading, role selection, rooms, public clues, and private clues.
+4. An iOS companion app for script reading, role selection, rooms, public clues, and private clues.
 5. A voice interaction module built around an ESP32-S3 audio board and an LLM-based Xiaozhi agent.
 
 ## Robot Platform
@@ -21,11 +21,12 @@ The most study-relevant custom modules are documented here:
 - Gaze display: `ios-gaze-display/`
 - Card dispenser: `hardware/clue-dispenser/`
 - Voice architecture: `docs/voice-interaction.md`
-- Companion app: `android-script-distributor/`
+- Study companion app: `ios-script-distributor/`
+- Android reference implementation: `android-script-distributor/`
 
-## Android Companion App
+## iOS Companion App
 
-The app supports:
+The HRI experiment used the iOS app in `ios-script-distributor/`. It supports:
 
 - script library browsing
 - room creation/joining
@@ -34,6 +35,25 @@ The app supports:
 - public clue image gallery
 - private clue image gallery
 - Firebase-backed room synchronization
+
+Setup:
+
+1. Create a Firebase iOS app.
+2. Download `GoogleService-Info.plist`.
+3. Place it at `ios-script-distributor/Scripts Distributor/GoogleService-Info.plist`.
+4. Replace placeholder URLs in `ios-script-distributor/Scripts Distributor/*.json`.
+5. Run `pod install` in `ios-script-distributor/`.
+6. Open `Scripts Distributor.xcworkspace` in Xcode and run on participant devices.
+
+The released JSON files use placeholder URLs. Preserve the schema when replacing assets:
+
+- `roleScripts`: role name -> act number -> PDF URL
+- `publicClueImageURLsDict`: act number -> public clue image URLs
+- `privateClueImageURLsDict`: role name -> act number -> private clue image URLs
+
+## Android Reference App
+
+The Android app is retained as a later/parallel implementation reference. It was not the primary app used in the HRI experiment.
 
 Setup:
 

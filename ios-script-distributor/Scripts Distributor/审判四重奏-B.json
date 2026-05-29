@@ -1,0 +1,54 @@
+{
+  "name": "审判四重奏",
+  "roles": ["叶才阳", "唐雅莉", "方崎", "楚幂鹤", "殷弘", "陈浩桐"],
+  "acts": [
+    { "number": 1, "name": "庭审" }
+  ],
+  "totalClueStages": 1,
+  "clueStages": [
+    { "number": 1, "name": "庭审" }
+  ],
+  "roleScripts": {
+    "叶才阳": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "唐雅莉": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "方崎": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "楚幂鹤": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "殷弘": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "陈浩桐": {
+      "1": "https://example.com/role-script.pdf"
+    }
+  },
+  "publicClueImageURLsDict": {
+    "1": []
+  },
+  "privateClueImageURLsDict": {
+    "叶才阳": {
+      "1": []
+    },
+    "殷弘": {
+      "1": []
+    },
+    "陈浩桐": {
+      "1": []
+    },
+	"唐雅莉": {
+      "1": []
+    },
+	"方崎": {
+      "1": []
+    },
+	"楚幂鹤": {
+      "1": []
+    },
+  }
+}

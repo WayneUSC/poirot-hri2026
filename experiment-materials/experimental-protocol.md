@@ -26,10 +26,10 @@ Both conditions used the same role setup, script-reading flow, and robot game-ma
 
 1. Welcome participants and explain consent/safety procedures.
 2. Assign roles and confirm device setup.
-3. Participants create or join a room in the companion app.
+3. Participants create or join a room in the iOS companion app.
 4. Participants select roles.
 5. Participants read their role scripts.
-6. POIROT facilitates clue delivery according to condition.
+6. POIROT facilitates clue delivery according to condition; in the app condition, participants access clues through the iOS companion app.
 7. Participants discuss, cross-check clues, and reconstruct the case.
 8. POIROT releases public testimony/clue moments.
 9. Participants complete post-game questionnaires.

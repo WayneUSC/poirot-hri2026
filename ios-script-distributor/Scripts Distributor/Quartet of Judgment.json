@@ -1,0 +1,38 @@
+{
+  "name": "Quartet of Judgment",
+  "roles": ["Ye Caiyang", "Tang Yali", "Fang Qi", "Chu Mihe", "Yin Hong", "Chen Haotong"],
+  "acts": [
+    { "number": 1, "name": "Trial" }
+  ],
+  "totalClueStages": 1,
+  "clueStages": [
+    { "number": 1, "name": "Trial" }
+  ],
+  "roleScripts": {
+    "Ye Caiyang": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Tang Yali": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Fang Qi": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Chu Mihe": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Yin Hong": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Chen Haotong": {
+      "1": "https://example.com/role-script.pdf"
+    }
+  },
+  "publicClueImageURLsDict": {
+    "1": ["https://example.com/clue-card.jpg", 
+          "https://example.com/clue-card.jpg",
+          "https://example.com/clue-card.jpg"]
+  },
+  "privateClueImageURLsDict": {
+  }
+}

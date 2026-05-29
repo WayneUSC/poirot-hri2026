@@ -3,6 +3,7 @@
 This repository should not contain:
 
 - Firebase `google-services.json`
+- Firebase `GoogleService-Info.plist`
 - API keys, tokens, or private certificates
 - participant data
 - raw recordings
