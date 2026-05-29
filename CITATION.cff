@@ -20,7 +20,7 @@ authors:
     given-names: Xinyi
 doi: 10.1145/3757279.3788663
 date-released: 2026-05-29
-url: "https://github.com/WayneUSC/poirot-hri2026-reproducibility"
+url: "https://github.com/WayneUSC/poirot-hri2026"
 preferred-citation:
   type: conference-paper
   title: "POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation in Multi-party Murder Mystery Games"
