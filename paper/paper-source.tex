@@ -1,0 +1,626 @@
+\DocumentMetadata{
+  pdfversion=2.0,pdfstandard=ua-2,
+  testphase={phase-III,firstaid,math,title}
+}
+%%
+%% This is file `sample-sigconf-authordraft.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,proceedings,bibtex,authordraft')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf-authordraft.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+% \documentclass[manuscript, screen, review]{acmart}
+% \documentclass[manuscript, screen, review, anonymous]{acmart}
+% \documentclass[sigconf]{acmart}
+% \documentclass[sigconf, review, anonymous]{acmart}
+% \documentclass[sigconf,anonymous]{acmart}
+% \documentclass[sigconf,authordraft]{acmart}
+\documentclass[sigconf,screen]{acmart-tagged}
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{enumitem}
+% \usepackage[font=small,labelfont=bf]{caption}
+\usepackage{balance}
+
+% 引入颜色包
+\usepackage{xcolor}
+% 定义一个命令 \rev (代表 revision)
+% 使用方法:\rev{这里是修改过的内容}
+% 目前设置为蓝色 (blue),你也可以改成 red 或 magenta
+% \newcommand{\rev}[1]{\textcolor{blue}{#1}}
+% 以后如果是定稿模式,想取消颜色,把上面那行注释掉,启用下面这行即可 ---
+\newcommand{\rev}[1]{#1}
+
+
+% \setlength{\parskip}{0pt}
+
+% --- 强力压缩空间代码 Start ---
+% 1. 压缩图表与正文的垂直距离
+\setlength{\textfloatsep}{4pt plus 2.0pt minus 2.0pt} 
+\setlength{\floatsep}{4pt plus 2.0pt minus 2.0pt}
+\setlength{\intextsep}{4pt plus 2.0pt minus 2.0pt}
+
+% 2. 压缩数学公式周围的距离
+\setlength{\abovedisplayskip}{3pt plus 1pt minus 1pt}
+\setlength{\belowdisplayskip}{3pt plus 1pt minus 1pt}
+\setlength{\abovedisplayshortskip}{0pt plus 1pt}
+\setlength{\belowdisplayshortskip}{0pt plus 1pt}
+
+% \settopmatter{authorsperrow=4}
+
+% 3. 压缩列表（itemize/enumerate）的行距
+% \usepackage{enumitem}
+\setlist{nosep, leftmargin=*} % nosep 会去掉列表项之间的垂直间距
+% --- 强力压缩空间代码 End ---
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+%%% The following is specific to HRI '26 and the paper
+%%% 'POIROT: Investigating Embodied Clue Delivery and Attitude Moderation in Multiplayer Murder Mystery Games'
+%%% by Wen Chen, Rongxi Chen, Shankai Chen, Huiyang Gong, Minghui Guo, Yingri Xu, Xintong Wu, and Xinyi Fu.
+%%%
+\setcopyright{cc}
+\setcctype{by}
+\acmDOI{10.1145/3757279.3788663}
+\acmYear{2026}
+\copyrightyear{2026}
+\acmISBN{979-8-4007-2128-1/2026/03}
+\acmConference[HRI '26]{Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction}{March 16--19, 2026}{Edinburgh, Scotland, UK}
+\acmBooktitle{Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26), March 16--19, 2026, Edinburgh, Scotland, UK}
+\received{2025-09-30}
+\received[accepted]{2025-12-23}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+% \title{POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation in Multi-Party Murder Mystery Games}
+
+\title[POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation...]{POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation in Multi-party Murder Mystery Games}
+
+\author{Wen Chen}
+\orcid{0009-0002-4204-8777}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{chenwen_bot@mail.tsinghua.edu.cn}
+
+\author{Rongxi Chen}
+\orcid{0009-0009-7298-7223}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{vichenxi@vanguardadvisories.com}
+
+\author{Shankai Chen}
+\orcid{0009-0002-3237-0383}
+\affiliation{%
+  \institution{University of Pennsylvania}
+  \city{Philadelphia}
+  \country{USA}
+}
+\email{skchen@seas.upenn.edu}
+
+\author{Huiyang Gong}
+\orcid{0009-0000-5211-0525}
+\affiliation{%
+  \institution{Syracuse University}
+  \city{Syracuse}
+  \country{USA}
+}
+\email{huyago@upenn.edu}
+
+\author{Minghui Guo}
+\orcid{0009-0004-9298-8438}
+\affiliation{%
+  \institution{National University of Singapore}
+  \city{Singapore}
+  \country{Singapore}
+}
+\email{mguo77@u.nus.edu}
+
+\author{Yingri Xu}
+\orcid{0009-0008-1495-5058}
+\affiliation{%
+  \institution{Royal College of Art}
+  \city{London}
+  \country{United Kingdom}
+}
+\email{yingri.xu@network.rca.ac.uk}
+
+\author{Xintong Wu}
+\orcid{0009-0009-6397-034X}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{wuxt22@mails.tsinghua.edu.cn}
+
+\author{Xinyi Fu}
+\authornote{Corresponding Author.}
+\orcid{0000-0001-6927-0111}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{fuxy@tsinghua.edu.cn}
+
+\renewcommand{\shortauthors}{Chen et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+As social robots take on increasingly complex roles like game masters (GMs) in multi-party games, the expectation that physicality universally enhances user experience remains debated. This study challenges the "one-size-fits-all" view of tangible interaction by identifying a critical boundary condition: users' Negative Attitudes towards Robots (NARS). In a between-subjects experiment (\emph{N} = 67), a custom-built robot GM facilitated a multi-party murder mystery game (MMG) by delivering clues either through direct tangible interaction or a digitally mediated interface. Baseline multivariate analysis (MANOVA) showed no significant main effect of delivery modality, confirming that tangibility alone does not guarantee superior engagement. However, primary analysis using multilevel linear models (MLM) revealed a reliable moderation: participants high in NARS experienced markedly lower narrative immersion under tangible delivery, whereas those with low NARS scores showed no such decrement. Qualitative findings further illuminate this divergence: tangibility provides novelty and engagement for some but imposes excessive proxemic friction for anxious users, for whom the digital interface acts as a protective social buffer. These results advance a conditional model of HRI and emphasize the necessity for adaptive systems that can tailor interaction modalities to user predispositions.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+% \begin{CCSXML}
+% <ccs2012>
+%  <concept>
+%   <concept_id>00000000.0000000.0000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>500</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>300</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+% </ccs2012>
+% \end{CCSXML}
+
+% \ccsdesc[500]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc[300]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc[100]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10003120.10003123.10011758</concept_id>
+       <concept_desc>Human-centered computing~Interaction design theory, concepts and paradigms</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10003120.10003130.10011762</concept_id>
+       <concept_desc>Human-centered computing~Empirical studies in collaborative and social computing</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10003120.10003121.10011748</concept_id>
+       <concept_desc>Human-centered computing~Empirical studies in HCI</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Interaction design theory, concepts and paradigms}
+\ccsdesc[500]{Human-centered computing~Empirical studies in collaborative and social computing}
+\ccsdesc[500]{Human-centered computing~Empirical studies in HCI}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+% \keywords{Do, Not, Use, This, Code, Put, the, Correct, Terms, for,
+%   Your, Paper}
+\keywords{Human-Robot Interaction, Social Robots, Multi-Party Interaction, Tangible Interaction, Social Deduction Games, Negative Attitudes towards Robots (NARS)}
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+The role of social robots is \rev{expanding} rapidly beyond utilitarian functions and into the realm of complex human social life, involving education, entertainment, and collaborative play \cite{belpaeme2018social, munoz2021robo, rato2023robots}. One compelling application is their use as a game master (GM) in traditional tabletop and narrative-driven games \cite{fischbach2018follow, kennington2014probabilistic}. Building upon this, we turn to a more complex and underexplored frontier: the domain of murder mystery games (MMGs) \cite{zhu2024player, wu2023deciphering}. This genre, relying heavily on deception, reasoning, logical deduction, and intricate social interaction, has arisen as a challenging testbed for studying group Human-Robot Interaction (HRI) \cite{moujahid2022multi, parreira2022design, tennent2019micbot, oliveira2021human}. Although recent studies in large language models (LLMs) have fostered interest in virtual GMs \cite{sasha2025multi, song2024you}, the unique challenges of designing effective interaction modalities for a robot in such a socially and cognitively demanding game have received limited empirical attention \cite{munoz2021robo, rato2023robots, lin2022benefits, ng2024role}. To this end, we introduce Plot-Oriented Interactive Robot for Organized Theatrics (POIROT)\footnote{The acronym POIROT alludes to Agatha Christie's fictional detective Hercule Poirot, reflecting the robot's role as a narrative orchestrator in murder mystery settings.}, a custom-built robot designed to facilitate this multi-party social deduction game.
+
+Designing effective interaction modalities for such a system in complex settings remains an open challenge \cite{tsai2025assistive, azevedo2024comfort, 9613601}. Although POIROT is a physically embodied robot, simply considering whether a robot is present or not is insufficient for understanding how users engage with it \cite{tsai2025assistive, sanfilippo2025caged, lagomarsino2023maximising, takayama2009influences}. Recent shifts in HRI emphasize that how an interaction is delivered, including the degree of immediacy, proximity, and mediation, is often more consequential than embodiment alone \cite{tsai2025assistive, jung2025proximity, Su2023RecentAI}. For instance, Sanfilippo et al. argue that contemporary transitions from basic HRI to collaboration and teaming prioritize the design of interaction modalities like shared space, physical contact, and multi-modal signaling. In multi-party contexts, a central design decision concerns the choice between direct tangible engagement (e.g., the robot moving toward players and handing over physical items) and digitally mediated interaction (e.g., distributing information via tablet interfaces) \cite{nigro2025social, han2024co, tan2022group}. These modalities generate distinct social dynamics: direct physical interaction elevates proximity and immediacy, but also imposes stronger proxemic demands, which can potentially exacerbate social pressure for users sensitive to interaction at close range \cite{tsai2025assistive, mead2015proxemics, mumm2011human, rajamohan2019factors}. In contrast, mediated interaction provides a buffered and lower-pressure channel that reduces the perceived intensity of the robot's presence and offers greater predictability \cite{pandey2025integrating, gittens2024remote, han2024co}. Consequently, the key research question turns from whether embodiment matters to how these contrasting delivery modalities, direct vs. mediated, shape users' experiences in complex group settings \cite{kabacinska2025influence, esterwood2025virtually, gillet2021robot, han2024co}.
+
+These differences in modality are of particular impact for users who vary in their comfort with robots \cite{kabacinska2025influence, herzog2025influence, li2019comparing}. Negative Attitudes towards Robots Scale (NARS), which captures stable predispositions such as anxiety, avoidance tendencies, and discomfort with unpredictable robot behaviors, closely underpins how individuals manage proxemic boundaries and perceived social demands \cite{nomura2006measurement, nomura2007experimental, kodani2024effects, kabacinska2025influence}. Under a psychological distance framework, users with high NARS may find direct tangible interaction as intrusive, effortful, or difficult to predict, leading to elevated proxemic stress and a reduced sense of control \cite{liberman2007psychological, trope2007construal, herzog2025influence, miller2021more, nomura2007experimental}. Conversely, digitally mediated delivery can function as a psychological buffer via increasing perceived distance, lowering social pressure, and enabling more comfortable engagement \cite{shahid2024effectiveness, osler2023sociality, warnock2020treating}. Prior work has shown that user attitudes shape dyadic HRI, however, much less is known about how these predispositions interact with interaction modality in co-located, multi-party environments, where social coordination demands are substantially higher \cite{kabacinska2025influence, nigro2025social, dahiya2023survey, schneiders2022non}. This study therefore examines how interaction modality and individual predispositions jointly influence user experience in a richly constructed narrative game setting.
+
+To investigate these dynamics, we conducted a between-subjects experiment ($N=67$) in which groups of players participated in a multi-party MMG facilitated by POIROT. We examined two theoretically grounded interaction modalities: direct physical delivery and digitally mediated delivery, which were separately operationalized as the Physical-Card condition (POIROT approached players and dispensed printed clue cards) and the In-App condition (the same clues presented via a custom tablet interface). By holding the robot’s identity, dialogue, narrative pacing, and overall game flow constant, this design enables a clean comparison of modality effects while simultaneously minimizing confounding differences in behavior or content. The specific hypotheses derived from the theoretical framework are presented after the related work in Section 2.4.
+
+Through this approach, the contributions of our study are threefold. Empirically, we present a novel controlled evaluation of interaction modality in a complex, co-located multi-party MMG facilitated by a robot, comparing direct physical delivery with digitally mediated delivery under tightly standardized conditions. At the theoretical level, we provide a psychological distance account that helps explain how proxemic demands and user attitudes in conjunction shape experience. From a design perspective, our findings highlight the limits of “one-size-fits-all” approaches and underscore the need for adaptive interaction modalities that adjust proximity and mediation based on user predispositions.
+
+\vspace{-8pt}
+\section{Related Work}
+\subsection{Robots as Game Masters and Facilitators}
+The application of social robots in gaming and entertainment is a growing area of HRI, \rev{moving beyond task assistance and toward richer social roles} \cite{rato2023robots, munoz2021robo, sandoval2022human}. Previous research \rev{has demonstrated the potential of robots to improve children's personalized learning and therapy as partners or guides \cite{ligthart2023design, shiomi2021two, kouroupa2022use, rakhymbayeva2021long}. In cooperative or adversarial games, robots have been designed as teammates that facilitate collaboration and moderate conflict, or as opponents capable of sophisticated strategy \cite{correia2018group, nichols2021collaborative, lombardi2025would}. Informed by these positions in structured games,} researchers have devoted increasing attention to robots in narrative and facilitation roles, such as mediators or characters in storytelling and puzzle-solving games, in which robots have been demonstrated to enhance immersion and enjoyment \cite{lin2022benefits, ng2024role}. 
+
+In addition to diegetic roles, robots have also operated as non-diegetic facilitators of group dynamics through regulating turn-taking, promoting fairness, and orchestrating participation by means of social cues such as gaze, proxemics, and movement \cite{short2017robot, short2015towards, mutlu2009footing, buchem2024human}. While these studies substantiate the promise of robots in managing multi-party interaction, they mostly focus on isolated facilitation mechanics rather than the intricate demands defining social deduction games \cite{lin2022benefits, ng2024role, short2017robot}.
+
+With the emergence of murder mystery games (MMGs) as a promising but challenging research frontier \cite{bowman2025transformative, wu2023deciphering, zhu2024player, nonomura2025speaks}, many efforts have primarily adopted LLM-based disembodied agents to simulate reasoning and narrative control in such games \cite{wu2023deciphering, zhu2024player, lombardi2025would, nonomura2025speaks}. However, very few studies have examined how a physical robot might fulfill the full suite of a GM's responsibilities encompassing arbitration of rules, handling of physical game artifacts, and management of private information \cite{lin2022benefits, ng2024role, kennington2014probabilistic}. \rev{This gap is striking given that the GM's authority in MMGs is not only cognitive but also material—managing the flow of tangible clues and information \cite{bowman2025transformative, xiong2020murder}. In this work, we expand on these parallel threads and address this critical and underexplored niche by investigating how a robot GM's approach to delivering game materials, whether through direct tangible actions or digitally mediated alternatives, impacts player experience in a complex multi-party MMG.}
+
+\vspace{-5pt}
+\subsection{Direct vs. Mediated Interaction}
+In multi-party HRI environments, the effects of a robot's behavior are shaped by both what the robot communicates and how the content is delivered \cite{10.1145/3643803, bazzano2018human, rodriguez2015bellboy, li2015benefit}. Recent work has highlighted that the modality of interaction such as the level of immediacy, proximity, and mediation, is instrumental in shaping users' comfort, attention, and overall experience, which transcends earlier binary contrasts between physical and virtual agents and centers on the concrete social and psychological demands embedded in dissimilar forms of delivery \cite{leichtmann2022personal, tsai2025assistive, gittens2024remote, zu2024let}.
+
+Direct tangible interaction, as exemplified by a robot physically approaching a user and presenting an object, inherently increases spatial immediacy \cite{rahmah2025modeling, hall1966hidden, leichtmann2022personal, tsai2025assistive}. Drawing from Hall’s proxemics theory, such close-range actions can heighten attentional salience and psychological intensity, while also imposing greater proxemic demands that may induce social pressure or discomfort for some users \cite{hall1966hidden, rodriguez2015bellboy}. In these circumstances, the robot's movement and physical closeness are not merely functional behaviors but also social signals requiring users to manage attention, expectations, and personal space \cite{li2015benefit, rodriguez2015bellboy}.
+
+In comparison, digitally mediated delivery introduces a layer of psychological distance between the user and the robot \cite{xu2018investigating, gittens2024remote, walther1996computer}. Theories of Computer-Mediated Communication (CMC) describe mediated channels as reducing immediacy and filtering out potentially stressful cues through a form of social buffering \cite{walther1996computer, walther2011theories}. Emerging HRI literature similarly shows that mediated interfaces can mitigate perceived social pressure and enhance predictability, allowing users to engage with the robot's content without the demands resulting from direct physical interaction \cite{gittens2024remote, xu2018investigating}.
+
+These perspectives indicate that immediate and mediated channels constitute fundamentally different interaction demands \cite{li2015benefit, walther1996computer}. Instead of assuming greater immediacy always improves engagement, it is crucial to understand how users with varying sensitivity react to the proxemic overload of direct interaction in contrast with the buffered structure of mediated interaction \cite{tsai2025assistive, zojaji2025impact, fitter2020closeness, mumm2011human}.
+
+\vspace{-6pt}
+\subsection{Attitudes toward Robots and Sensitivity to Proxemic Demands}
+User comfort with robots exhibits considerable variation, a trait well-captured by the Negative Attitudes towards Robots Scale (NARS), which measures anxiety and avoidance regarding unpredictable behaviors \cite{nomura2006measurement, ivaldi2015towards, naneva2020systematic}. Theoretically, high NARS users prioritize reduced immediacy and greater predictability to manage interaction-based intrusions \cite{syrdal2009negative, nomura2006measurement, niewrzol2024development}. Consequently, direct tangible actions, such as entering personal space to physically pass an object, impose elevated proxemic demands that these users find socially taxing \cite{rahmah2025modeling, nenna2024addressing, miller2021more, obaid2016stop}. For example, Rahmah et al. show that tasks like object handovers elicit markedly higher proxemic sensitivity in anxious individuals, necessitating greater separation distance for sense of ease \cite{rahmah2025modeling}. By contrast, digitally mediated delivery offers a protective buffer, reducing real-time coordination and aligning with preferences for lower immediacy \cite{gittens2024remote, seo2025evaluating, van2022impact}. While NARS is widely studied in dyadic settings, its specific interaction with concrete delivery modalities in complex, co-located multi-party environments where social coordination demands are notably higher is still underexplored \cite{nigro2025social, muller2024egocentric, amirova202110}.
+
+\vspace{-8pt}
+\subsection{The Present Study and Hypotheses}
+Guided by the above theoretical perspectives on interaction modality and psychological distance, the present study investigates how the method of delivery (direct tangible vs. digitally mediated) shapes user experience in a co-located multi-party setting, and how this relationship is conditioned by individual predispositions toward robots.
+
+Drawing from traditional presence-centered interpretations, physical delivery may enhance immediacy and thus increase engagement and immersion. To test this baseline assumption in our specific context, we first examine the main effect of interaction modality:
+
+\textbf{H1 (Baseline Effect of Modality):} The Physical-Card condition (representing direct tangible delivery) will lead to greater narrative immersion, game experience, and social presence compared to the In-App condition (representing digitally mediated delivery).
+
+However, our primary theorized mechanism concerns the moderating role of individual attitudes. Based on the psychological distance account, we argue that the social buffering introduced by digital mediation will be advantageous for users predisposed to discomfort in high-immediacy or close-range situations. Therefore, we hypothesize:
+
+\textbf{H2 (Moderating Role of NARS):} Users' NARS will moderate the effects of the delivery modality. Specifically, for users with high NARS, the Physical-Card condition will result in lower narrative immersion and game experience compared to the In-App condition due to increased proxemic demands, whereas this difference will be attenuated or negligible for users with low NARS.
+
+Collectively, these hypotheses enable us to test both a presence-oriented assumption (H1) and the central prediction derived from the psychological distance account (H2).
+
+\vspace{-8pt}
+\section{Methods}
+\subsection{Participants}
+A total of 72 participants were recruited from a Tsinghua University community through campus posters and posts on social media channels. Five participants who did not complete all the study questionnaires were excluded from the analysis. This resulted in a final sample of 67 participants (40 female, 26 male, 1 preferred not to disclose). The majority of participants were young adults; 6.0\% ($n=4$) were aged 18--20, 70.1\% ($n=47$) were aged 21--30, 20.9\% ($n=14$) were aged 31--40, and 3.0\% ($n=2$) were over 40. Most of the participants were local residents (95.5\%, $n=64$), with three international participants. Regarding their prior experience with MMGs, 50.8\% ($n=34$) had less than one year of experience, 20.9\% ($n=14$) had one to two years, 17.9\% ($n=12$) had three to five years, and 10.5\% ($n=7$) had five or more years. Details of random assignment and session structure are provided in Section 3.2 (Study Design). All participants provided their informed consent prior to the study, and the study protocol was approved by the institutional review board.
+
+\subsection{Study Design}
+\subsubsection{Overview}
+We employed a between-subjects experiment to investigate the effects of clue-delivery modality. The recruited 72 participants were equally assigned to one of the two following experimental conditions: the Physical-Card condition ($n=36$, hereafter Physical-Card) and the In-App condition ($n=36$, hereafter In-App). Within each condition, the participants were further organized into six independent sessions of six players each, resulting in a total of 12 sessions. Each session involved playing our custom-designed murder mystery script, \textit{Judgment Quartet} (see Appendix A for Game Materials details), under the guidance of a custom-built social robot, POIROT, operated via a Wizard-of-Oz (WoZ) setup for movement and delivery control. Block randomization was used to maintain balanced group sizes across conditions and sessions. To ensure a highly controlled environment, each participant, regardless of condition, was provided with an iPad of identical screen size running a custom-developed companion application, which standardized the preliminary game phases of room creation, character selection, and private script reading. \rev{The experimental manipulation defined the modality through which participants received their clue materials (see Section~3.2.2).} Of all participants, 67 completed all procedures and were included in the final analyses (35 in the Physical-Card, 32 in the In-App).
+
+\vspace{-10pt}
+\subsubsection{Experimental Conditions}
+All sessions began with the same app-based setup routine: participants opened the companion application, created or joined a shared room, selected one of the six predefined roles, and unlocked their private scripts on their assigned iPads (see Appendix B, Figure 1 for more details). This standardized start-up phase ensured that information asymmetry and role assignment were identical under all conditions. We then manipulated a single between-subjects factor, clue-delivery modality, with two levels: \textbf{(a) Physical-Card Condition.} After each participant unlocked their personal script, the distribution of all clue materials commenced. The WoZ operator tele-operated POIROT's mobile base to each player sequentially. Upon arriving, the robot verbally announced the delivery (e.g., "You will now receive six private clue cards") and dispensed the laminated cards directly through its clue card dispenser into the addressed player's hand as they reached forward to receive each card (see Appendix B, Figure 2 for sample cards; Appendix C, Figure 5 for dispenser technical specifications). After distributing all private clue cards, POIROT was tele-operated to move to the table center to dispense the eight public cards with a general announcement (e.g., "You will now receive eight public clue cards"). All clue delivery was completed before the players began reading the scripts. \textbf{(b) In-App Condition.} At the corresponding procedural stage (i.e., post-script unlocking), the clues were delivered digitally. After unlocking their personal script, each participant could access a "Clues" button located in the bottom-left corner of the script interface (see Appendix B, Figure 1). When pressed, this button triggered a slide-up panel displaying the player's full set of private clues. Afterwards, the eight public clues were released simultaneously to all players on the same panel (see Appendix B, Figure 3 for digital clues panel). To maintain verbal consistency with the Physical-Card condition, POIROT made identical personalized and general announcements. The app maintained real-time game state synchronization via Firebase \cite{firebase} in real time. All clue delivery was completed before the players began reading the scripts.
+
+\rev{Except for the delivery modality, all other aspects of the interaction, including narration, robot voice, eye animations, arm gestures, and base navigation speed, were kept constant. The WoZ operator followed an identical standardized procedure in both conditions. However, quantitative analysis of session recordings indicated an inherent temporal difference: the In-App delivery was almost instantaneous ($\approx$ 3\,s), whereas the full Physical-Card delivery sequence (approaching and dispensing) required approximately 4--5 minutes on average. We treat this temporal difference as an intrinsic property of the tangible interaction modality rather than a confound.}
+
+\vspace{-6pt}
+\subsubsection{Apparatus and Environment}
+Each session was conducted in a quiet living-room-style laboratory environment ($\approx$7.0\,m $\times$ 8.5\,m), furnished with a central dining table ($\approx$0.75\,m $\times$ 1.5\,m) and six identical chairs, to better emulate the natural context of MMG (as illustrated in Figure~\ref{fig:gameplay}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth, height=3cm]{Experiement View_Blurred.png}
+    \Description{A picture showing the experimental setup. A group of participants sits around a rectangular dining table in a living-room-style laboratory environment. The custom-built robot, POIROT, stands on the table surface at the head of the table, facing the participants who are engaged in the game.}
+    \vspace{-5pt}
+    \caption{A gameplay session with POIROT.}
+    \label{fig:gameplay}
+    % \vspace{-10pt}
+\end{figure}
+
+\noindent \textbf{\textit{POIROT} Robot.}
+POIROT is a 50.1\,cm tall social robot with a 3D-printed shell, animated eyes, two 2-DOF arms, a card dispenser, and a circular base (adapted from the open-sourced FishBot platform~\cite{fishbot2025}). For voice interaction, POIROT featured an embedded audio pipeline composed of voice activity detection (VAD), automatic speech recognition (ASR), an LLM dialogue agent \cite{xiaozhi2025}, and text-to-speech (TTS) synthesis, implemented on an ESP32 audio capture module. To ensure narrative consistency, the LLM was preloaded with the complete \textit{Judgment Quartet} script and conversational guidelines, and supported natural barge-in turn-taking (see Appendix C for details).
+
+\noindent \textbf{Companion App and Recording.}
+A custom-developed companion application, running on iPads of an identical screen size (10.9-inch), was used for initial game phases and for digital clues delivery in the In-App condition (see Appendix B, Figure 3). \rev{Two 720p wide-angle webcams were positioned unobtrusively to verify the fidelity of condition implementation and quantify delivery timing. Beyond these manipulation checks, the recordings were not coded for behavioral analysis.}
+
+\noindent \textbf{Wizard-of-Oz Control.} 
+Following standard HRI protocol, a WoZ operator was seated in an adjacent room, invisible and inaudible to the participants. The operator tele-operated POIROT's mobile base using command-line inputs via ROS~2 (running on Ubuntu~22.04) to precisely control its linear and angular movement and stopping \cite{macenski2022robot}. The clue cards dispenser was activated using a mechanical push switch attached to a DuPont wire. This wire was discreetly routed to minimize visibility and participants' seating was arranged to avoid proximity to it.
+
+\vspace{-5pt}
+\subsubsection{Procedure}
+Each session lasted approximately 95--100 minutes depending on the condition. Upon arrival and providing informed consent, all participants were first asked to complete a pre-study questionnaire. Afterwards, the experiment followed a four-phase structure as below:
+
+\noindent \textbf{Introduction and Clues Distribution ($\approx$ 10--15 min).} The session began with POIROT delivering a welcome message and explaining the game rules. The participants then used the companion app to create or join in a shared room, select their character roles, and receive their private scripts. \rev{Following this, clues were delivered according to the specific condition (see Section~3.2.2), accompanied by identical verbal announcements, though the duration of this phase varied by modality.}
+
+\noindent \textbf{Reading and Preparation ($\approx$ 25 min).} Once all participants had received their scripts and all clues, a quiet reading phase began. This allowed players to familiarize themselves with their roles and case materials in preparation for the main trial. To support note-taking if desired, each participant was also provided with a blank sheet of paper and a pencil, although their use was optional.
+
+\noindent \textbf{Trial Deliberation ($\approx$ 50 min).} The main deliberation was moderated by POIROT acting as a judge and was structured in three stages: \rev{1) POIROT first summarized the case details and then prompted each player to introduce themselves in a fixed order. The robot used the same approach sequence (turning, gazing, and moving forward) to address each player before they spoke. 2) A second round of structured dialogue followed the same fixed order and interaction pattern, during which POIROT prompted each player to share information and their perspectives on the case. 3) After the structured rounds, POIROT announced a 30-minute free deliberation period during which participants could discuss the case freely.}
+
+\noindent \textbf{Conclusion and Post-Study Questionnaires ($\approx$ 10 min).} POIROT revealed the canonical solution. The experiment concluded with participants finishing a post-study questionnaire.
+
+\vspace{-8pt}
+\subsection{Measures}
+\rev{A combination of established, validated scales and custom-adapted questionnaires was used to measure our variables of interest. We conducted exploratory factor analysis (EFA) and calculated Cronbach's $\alpha$ for all scales to ensure construct validity and internal reliability. Unless otherwise noted, items were rated on a 7-point Likert scale (1 = "Strongly Disagree", 7 = "Strongly Agree").}
+
+\vspace{-8pt}
+\subsubsection{Pre-Study Covariates}
+Participants completed two validated scales to account for participants' pre-existing traits and attitude as potential covariates.
+
+\noindent \rev{\textbf{Big Five Inventory (BFI).}
+We used the 44-item version of the Big Five Inventory \cite{john1999big} to measure participants' personality traits. Participants rated each statement on a 5-point Likert scale. Internal consistency was acceptable across all five dimensions (Cronbach's $\alpha$ range: 0.71--0.82).}
+
+\noindent \rev{\textbf{Negative Attitudes towards Robots Scale (NARS).}
+Baseline robot anxiety was measured using the original 14-item NARS \cite{nomura2006measurement}, which captures interactional distress and negative attitudes and is theoretically related to proxemic sensitivity \cite{mumm2011human} (Cronbach's $\alpha$ = 0.76).}
+
+\vspace{-7pt}
+\subsubsection{\rev{Post-Study Dependent Variables}}
+Participants completed questionnaires to evaluate their experience. Full psychometric details, including factor matrices and scree plots, are provided in Appendix D.
+
+\noindent \textbf{Narrative Immersion.}
+Adapted from the Immersion Experience Questionnaire \cite{jennett2008measuring}, we measured participants' sense of immersion using a custom-developed, 15-item Narrative Immersion Scale, which captured attentional focus and emotional engagement, with several items tailored to our specific context to evaluate the robot's impact on the immersive experience. Psychometric analysis confirmed a dominant single-factor structure ($KMO = 0.84$, variance explained $= 49.6\%$) with high internal consistency (Cronbach's $\alpha$ = 0.93; see Appendix D.1).
+
+\noindent \rev{\textbf{Social Presence.} 
+To assess participants' perception of the GM as a tangible and responsive entity, we used a 5-item Social Presence Scale adapted from the Networked Minds Measure \cite{harms2004internal}. This scale focused on co-presence, attentional allocation, and behavioral interdependence. EFA results indicated good sampling adequacy ($KMO = 0.79$) and a single-factor structure explaining 52.0\% of the variance (Cronbach's $\alpha$ = 0.83; see Appendix D.2).}
+
+\noindent \rev{\textbf{Game Experience.} 
+A custom-developed core 7-item scale assessed general satisfaction and flow. It exhibited a solid one-factor structure ($KMO = 0.81$, variance explained $= 58.5\%$) and good reliability (Cronbach's $\alpha$ = 0.87). Additionally, participants in the Physical-Card condition completed a 4-item subscale probing tangibility-specific novelty and engagement (Cronbach's $\alpha$ = 0.84). This was analyzed separately (see Appendix D.3).}
+
+\noindent \textbf{Qualitative Feedback.}
+The questionnaire also included open-ended questions to gather participant reflections, which prompted participants to describe their overall feelings about the clue delivery method, provide suggestions for improvement, and recall any specific moments when the experience was impacted.
+
+\vspace{-12pt}
+\subsection{Data Analysis Strategy}
+\noindent \textbf{Quantitative Analysis.}
+Our analysis plan adopted a hierarchical two-step approach implemented using Python's statsmodels library.
+
+First, to examine the baseline effect of tangibility (H1), we performed a one-way multivariate analysis of variance (MANOVA). This method was chosen as an omnibus test to detect whether the clue-delivery modality exerted a significant overall effect across the combined vector of the dependent variables (Narrative Immersion, Social Presence, and Game Experience). Considering the balanced design of our study, MANOVA provided a robust preliminary check for global differences while strictly controlling for the family-wise error rate (FWER) prior to more granular analyses.
+
+Second, to test our primary moderation hypothesis (H2), we employed multilevel linear models (MLMs) \cite{raudenbush2002hierarchical} to account for the hierarchical structure of our data, in which participants were nested within 12 game sessions. Separate models were constructed for each dependent variable. Each model included the clue-delivery modality, NARS, and their interaction as fixed effects, with gameplay session specified as a random intercept (see Appendix E).
+
+Significance was assessed using Wald tests ($z$-scores) derived from mixed-effects models. Upon detecting significant interactions, we decomposed them via simple slope analyses at low ($-1$ SD) and high ($+1$ SD) levels of NARS to clarify the direction of moderation. In post-hoc analyses, Bonferroni corrections were applied for multiple comparisons to ensure statistical robustness. Finally, exploratory analyses were conducted to examine potential mechanisms.
+
+\noindent \textbf{Qualitative Analysis.}
+We analyzed open-ended responses using a lightweight inductive coding process inspired by thematic analysis \cite{braun2006using}. After consolidation and anonymization, two of the authors reviewed the data to identify salient patterns regarding the robot GM, delivery modality, and subjective experiences. One researcher generated provisional codes based on participant language; a second researcher reviewed them. Differences were resolved through iterative discussion. Agreed-upon codes were grouped into higher-level themes and refined by comparing with original responses to ensure narrative accuracy. This analysis provides interpretive insight into the quantitative moderation effects rather than establishing the exhaustive prevalence of the themes.
+
+\vspace{-6pt}
+\section{Results}
+We analyzed the data from 67 participants (35 in the Physical-Card condition, 32 in the In-App condition). Prior to hypothesis testing, we assessed the data for normality and homogeneity of variances. The Shapiro-Wilk test indicated that most data were normally distributed, with the exception of the Social Presence score in the Physical-Card condition ($W = 0.93$, $p = 0.03$). Brown-Forsythe tests confirmed that the assumption of homogeneity of variances was met for all dependent variables (all $p$ > 0.23).
+
+\vspace{-6pt}
+\subsection{Main Effect of Tangibility (H1)}
+To test our first hypothesis (H1), we examined the overall effect of the clue-delivery modality on the three primary dependent variables combined (Narrative Immersion, Game Experience, and Social Presence) by using multivariate analysis of variance (MANOVA). The results did not show a significant overall effect of the experimental condition (Wilks' $\lambda = 0.97,\; F(3, 63) = 0.55,\; p = 0.65$). \rev{The follow-up analysis of effect sizes confirmed negligible to small differences across all outcomes (Narrative Immersion: $d=-0.24$; Social Presence: $d=-0.09$; Game Experience: $d=-0.22$).} This demonstrates no simple, direct difference between the Physical-Card and In-App conditions when considering the user experience as a whole. The lack of a main effect suggests \rev{tangibility} effects are not invariable and underscores the importance of investigating our primary moderation hypothesis (H2) to comprehend the conditions under which \rev{direct tangible interaction} matters.
+
+\vspace{-6pt}
+\subsection{Moderating Role of NARS (H2)}
+To test our primary hypothesis (H2), we utilized an MLM to analyze the interaction between the experimental condition and the participants' NARS scores under the consideration of the nested data structure (see Appendix E for the full model specification). The analysis revealed that participants' pre-existing negative attitudes towards robots reliably moderated the effect of the clue-delivery modality on multiple dimensions of user experience.
+
+\noindent \rev{\textbf{Narrative Immersion.} A significant interaction was revealed between condition and NARS ($p = 0.003$; see Table~\ref{tab:mlm_results}). To interpret this, we performed a simple slopes analysis with Bonferroni correction. For participants with high NARS scores ($+1\,SD$), the Physical-Card condition yielded significantly lower immersion compared to the In-App condition ($p_{corr} = 0.014$). Conversely, for low NARS participants ($-1\,SD$), no significant difference was observed ($p_{corr} = 0.276$). This suggests that physical delivery was detrimental only to those already wary of robots (see Table~\ref{tab:simple_slopes} and Figure~\ref{fig:immersion}).}
+
+\noindent \rev{\textbf{Game Experience.} Similarly, a significant interaction was found for game experience ($p = 0.033$; see Table~\ref{tab:mlm_results}). The simple slopes analysis again showed that while high NARS participants trended toward lower experience in the Physical-Card condition ($p_{uncorr}$ = 0.085), this effect became non-significant after Bonferroni correction ($p_{corr}$ = 0.170). No significant difference appeared for low NARS participants ($p_{uncorr}$ = 0.254) (see Table~\ref{tab:simple_slopes} and Figure~\ref{fig:experience}).}
+
+\noindent \textbf{Social Presence.} In contrast, the model for social presence showed neither a significant interaction effect ($p = 0.169$; see Table~\ref{tab:mlm_results}) nor a main effect of the condition.
+
+\vspace{-8pt}
+
+\begin{table}[htbp]
+\centering
+\caption{\rev{Multilevel Models Predicting Narrative Immersion, Game Experience, and Social Presence as a Function of Condition, NARS, and Their Interaction. Random Intercepts were Specified for Game Sessions.}}
+% \vspace{-8pt}
+\label{tab:mlm_results}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+ & \textbf{b} & \textbf{SE} & \textbf{95\% CI} & \textbf{p} \\
+\midrule
+\multicolumn{5}{l}{\textit{Narrative Immersion}} \\
+Intercept & 1.72 & 1.19 & [-0.61, 4.06] & 0.147 \\
+Condition (App=0, Cards=1) & 3.65 & 1.34 & [1.01, 6.28] & 0.007 \\
+NARS & 1.03 & 0.38 & [0.28, 1.78] & 0.007 \\
+Condition $\times$ NARS & -1.27 & 0.43 & [-2.10, -0.44] & 0.003 \\
+ICC & \multicolumn{4}{c}{0.130} \\
+\midrule
+\multicolumn{5}{l}{\textit{Game Experience}} \\
+Intercept & 2.34 & 1.17 & [0.05, 4.64] & 0.045 \\
+Condition & 2.60 & 1.32 & [0.01, 5.18] & 0.049 \\
+NARS & 0.84 & 0.37 & [0.11, 1.57] & 0.025 \\
+Condition $\times$ NARS & -0.88 & 0.41 & [-1.70, -0.07] & 0.033 \\
+ICC & \multicolumn{4}{c}{0.183} \\
+\midrule
+\multicolumn{5}{l}{\textit{Social Presence}} \\
+Intercept & 3.09 & 1.26 & [0.61, 5.56] & 0.014 \\
+Condition & 1.76 & 1.42 & [-1.03, 4.54] & 0.216 \\
+NARS & 0.57 & 0.40 & [-0.22, 1.35] & 0.156 \\
+Condition $\times$ NARS & -0.61 & 0.44 & [-1.47, 0.26] & 0.169 \\
+ICC & \multicolumn{4}{c}{0.292} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{\rev{Simple Slopes of Condition (Physical-Card vs. In-App) Predicting Outcomes at Low ($-1$ SD) and High ($+1$ SD) Levels of NARS. P-values are Reported as Uncorrected ($p_{unc}$) and Bonferroni-Corrected ($p_{corr}$).}}
+% \vspace{-8pt}
+\label{tab:simple_slopes}
+% 关键修改:使用 resizebox 强制限制宽度为 \columnwidth
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Outcome} & \textbf{NARS level} & \textbf{b} & \textbf{SE} & \textbf{z} & \rev{\textbf{$\boldsymbol{p_{unc}}$}} & \rev{\textbf{$\boldsymbol{p_{corr}}$}} \\
+\midrule
+Narrative Immersion & Low ($-1$ SD)  & 0.66  & 0.44 & 1.49  & 0.138 & 0.275 \\
+                    & High ($+1$ SD) & -1.24 & 0.46 & -2.72 & 0.007 & \textbf{0.014} \\
+\midrule
+Game Experience   & Low ($-1$ SD)  & 0.52  & 0.45 & 1.14  & 0.254 & 0.508 \\
+                    & High ($+1$ SD) & -0.80 & 0.47 & -1.72 & 0.085 & 0.170 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{figure}[t] % 建议用 t (top) 让图片自动顶格，通常比 htbp 排版更稳
+    \centering
+    
+    % --- 左图：Narrative Immersion ---
+    \begin{subfigure}[b]{0.49\columnwidth}
+        \centering        \includegraphics[width=\linewidth]{Fig_Narrative_Immersion.pdf}
+        % 如果不需要子标题（a）Narrative Immersion，可以把下面这行去掉
+        \caption{Narrative Immersion} 
+        \Description{A line graph showing the interaction effect on Narrative Immersion. The x-axis represents NARS scores. The In-App line (orange) slopes increases significantly, indicating that as NARS increases, immersion increases sharply. The Physical-Card line (blue) is relatively flat. High NARS participants have lower immersion in the physical condition.}
+        \label{fig:immersion}
+    \end{subfigure}
+    \hfill % 在两图之间制造弹性间距，把它们推向两边
+    % --- 右图：Game Experience ---
+    \begin{subfigure}[b]{0.49\columnwidth}
+        \centering        \includegraphics[width=\linewidth]{Fig_Game_Experience.pdf}
+        \caption{Game Experience}
+        \Description{A line graph showing the interaction effect on Game Experience. Similar to immersion, the In-App line slopes increases as NARS increases, while the Physical-Card line remains relatively stable. The gap is widest at the high NARS end.}
+        \label{fig:experience}
+    \end{subfigure}
+    
+    \vspace{-12pt} 
+    \caption{The interaction effect of experimental condition (Physical-Card vs. In-App) and participants’ Negative Attitudes towards Robots Scale (NARS) on: (a) Narrative Immersion, (b) Game Experience. Shaded areas represent 95\% confidence intervals.}
+    \label{fig:interaction_effects_panel}
+    
+    % --- 压缩 Figure 下方与正文的距离 ---
+    % \vspace{-10pt} 
+\end{figure}
+
+\vspace{-8pt}
+\subsection{Exploratory Analysis}
+We further conducted exploratory \rev{analyses} to investigate other potential mechanisms and alternative moderators. A mediation analysis testing whether Social Presence mediated the effect of condition on Narrative Immersion was not significant; the $95\%$ confidence interval for the indirect effect included zero (ACME $95\%$ CI $[-0.47, 0.27]$). No significant moderating effects were found for any of the Big Five personality traits \cite{john1999big} or for participants' prior gaming experience (all interactions $p$ > 0.10).
+
+\vspace{-2pt}
+\subsection{Qualitative Findings: The Trade-offs of Tangible Interaction}
+Based on the coding strategy from Section 3.4, we identified three themes illuminating the NARS moderation mechanism. As In-App feedback focused primarily on interface usability, we analyzed the richer experiential narratives from the Physical-Card condition regarding tangible engagement and friction. \footnote{Participant IDs (e.g., P1, P14) correspond to the 35 individuals in the Physical-Card condition. The quotations were translated and lightly edited for readability; bracketed text indicates clarifications.}.
+
+\noindent \textbf{Theme 1: Tangibility as a Source of Novelty and Engagement.}
+POIROT's most salient contribution, for many participants, was its pure novelty and the sense of occasion created by its delivery actions. The direct act of delivering clues transformed a simple game mechanic into a memorable event. One participant captured this unique quality, describing it subjectively as distinct from a digital push: "The clue distribution method is quite unique and has a very ritualistic sense" (P14). This sentiment was widely shared, with another saying that "When the robot faced me and sent me a clue card, [it] felt very ritualistic" (P21). Beyond novelty, the physical nature of the robot was considered a benefit to game fairness, with one participant appreciating that the robot was a "purer executor" and they would "not worry about the host revealing clues or being unfair" (P4). These comments suggest that for participants less sensitive to anxiety related to robots (low NARS) in particular, the direct tangible interaction functioned as a positive engagement characteristic by grounding the game in physical world and enhancing the perceived significance of the clues.
+
+\noindent \textbf{Theme 2: Interaction Costs and Proxemic Friction.}
+Alongside the positive novelty, another powerful theme centered on the interactional costs imposed by the robot's operational limitations of direct interaction. This mechanical friction provides a clear explanation for the negative experience reported by participants with high NARS. Two sources of friction came from its sluggish interaction speed, which encompassed slow physical movement and delayed verbal responses, and its artificial voice quality. The slow pace of interaction was repeatedly cited as an issue that "disrupted the flow of the game" (P8, P12). Crucially, this delay prolonged the obligatory physical engagement and forced users to maintain attention on the robot for longer than desired. Furthermore, the robot's "dramatic" electronic voice was a constant reminder of its artificiality, making one participant "feel like I'm not in the plot" (P20). From a psychological distance perspective, these moments constitute excessive proxemic demands as a result of the robot's cumbersome physical presence turning what was designed as a straightforward delivery task into a high-friction social encounter, depleting the patience and comfort of users with elevated NARS.
+
+\noindent \textbf{Theme 3: A Desire for Social Competence.}
+Finally, participants' suggestions for improvement indicated a desire for POIROT to better manage the social dynamics of tangible delivery. They looked beyond the current prototype's limitations to envision a more advanced version, a more competent social actor. Advice included enhancing its physical grace and social expressiveness, with one participant wishing "the movement can be smoother, and the logic of eyes-tracking can be more aligned with human logic" (P16). Another showed a desire for more natural, human-like social cues: "Hope it will have a mouth to speak like a human" (P11). This theme suggests that participants did not reject the idea of a robot GM; they would expect a high level of behavioral fluidity to minimize the social stress were a robot to perform direct tangible interactions. When the robot falls short of these expectations, the buffered nature of a digital interface (In-App) may become the preferred modality for its predictability and efficiency.
+
+\vspace{-12pt}
+\section{Discussion}
+This study investigated how the modality of clue delivery (direct tangible vs. digitally mediated) influenced user experience in a murder mystery game. Although MANOVA showed no main effect of modality, our results revealed a crucial moderator: participants' pre-existing attitudes toward robots (NARS). This challenges the assumption that tangible interaction is universally advantageous and supports a more subtle and conditional model of HRI. By integrating quantitative and qualitative evidence, we interpret these findings and discuss their broader theoretical and practical implications.
+
+\noindent \textbf{Theoretical Implications.}
+Our findings underscore that the effect of tangible interaction in HRI is conditional rather than ubiquitous. The absence of a significant main effect is consistent with recent meta-analyses suggesting that physical presence alone does not guarantee improved engagement \cite{esterwood2025virtually, schulz2025investigating, correia2020dark}. Instead, the significant interaction effect by NARS highlights that users' attitudes toward robots act as a filter, determining whether physical proximity is experienced as an engaging feature or a social burden \cite{kabacinska2025influence, naneva2020systematic, hancock2011meta}.
+
+\rev{Aside from the conditional effect, a primary theoretical contribution of this work is the application of a psychological distance framework to explain why users with high NARS preferred the In-App condition \cite{gittens2024remote, li2021anthropomorphism, mumm2011human}. Contrary to the viewpoint that mediated interaction is simply a "lesser form of" presence, our results suggest that digital mediation offers a distinct value: social buffering \cite{walther1996computer, walther2011theories, plomin2023virtual}. For users predisposed to robot anxiety, direct tangible delivery of clues was characterized by the robot physically navigating into their personal space and demanding handover, which likely imposed excessive proxemic demands \cite{rahmah2025modeling, obaid2016stop, koay2014social}. As our qualitative findings (Theme 2) indicate, these users perceived the robot's physical actions not as a service, but as a source of friction and forced attention \cite{rubagotti2022perceived, li2021anthropomorphism, yeh2017exploring}. Nonetheless, the In-App condition increased psychological distance, providing a safe, predictable, and low-pressure conduit for information conveyance \cite{walther1996computer, gittens2024remote, eyssel2011effects}. This validates the theoretical position that for populations with elevated robot-specific anxiety, mediated presentation can produce better experiences effectively by preserving the users' sense of control and reducing real-time coordination requirements \cite{belhassein2022addressing, shahid2024effectiveness, legler2023emotional}.}
+
+\rev{For users holding more positive attitudes toward robots, the lack of a significant difference between conditions suggests a canceling-out effect between novelty and friction \cite{rosen2024previous, kabacinska2025influence, fischer2021tracking, smedegaard2019reframing}. As mentioned in our qualitative analysis (Theme 1), these participants appreciated the unique and real nature of the physical card delivery type, viewing the robot's tangibility as a source of engagement \cite{smedegaard2019reframing, choi2015effect, li2015benefit}. This positive novelty, however, was likely counterbalanced by the interactional costs of the physical robot (e.g., slow movement, synthetic voice), which were absent in the efficient In-App condition \cite{irfan2024human, abendschein2022novelty}. Unlike high NARS participants who viewed these costs as threatening or annoying, low NARS users tolerated them, resulting in a net experience commensurate with the smooth digital interface \cite{hoffman2014designing, kabacinska2025influence, rosen2024previous}. This implies that while tangibility offers a novelty bonus, it also incurs an interaction tax. Whether the net result is positive is heavily dependent on the users' threshold for social friction \cite{song2025no, abendschein2022novelty, smedegaard2019reframing}.}
+
+\noindent \textbf{Practical Implications}
+From a design perspective, our findings highlight key considerations for developing social robots in complex social contexts, such as collaborative games, and potentially for educational settings where interaction modality and group dynamics play a critical role \cite{lin2022benefits, gillet2020social, haripriyan2024human}. Robot game masters, exemplified by our POIROT system, should strive for adaptive mechanisms to tailor the level of proximity and mediation based upon user predispositions (e.g., pre-game NARS assessments) \cite{buracchio2025impact, gillet2020social, obaid2016stop, gillet2021robot}. In practice, designers must balance tangible novelty and social friction: Although direct physical delivery can enhance engagement through novelty and physical reality, it also incurs substantial interactional costs rooted in proxemic demands \cite{lin2022benefits, samarakoon2022review, smedegaard2019reframing}. To maximize the benefits of embodiment, designers must ensure that robotic movements are fluid enough to minimize proxemic demands and prevent the interaction from becoming socially burdensome \cite{gonccalves2024non, neto2023robot, Su2023RecentAI}. Notably, systems should support fallback mediated modes such as switching to a tablet interface for groups with higher levels of robot anxiety \cite{rosenberg2020robot, shamekhi2019multimodal}. By functioning as a social buffer, this mediated pathway can preserve user comfort without sacrificing the progression of the game, which has broader implications for HRI group settings, such as team building exercises or therapeutic games, where tangible interaction can fortify social presence, but risks alienating users who are susceptible to social pressure \cite{lin2022benefits, gillet2020social, oh2018systematic, yuliawati2024scoping}.
+
+\vspace{-10pt}
+\section{Conclusion and Future Work}
+\noindent \rev{\textbf{Limitations.} First, our predominantly East Asian sample provides valuable non-WEIRD insights but limits generalizability to other demographics \cite{lim2021social, seaborn2023not, van2022weird, leichtmann2022crisis}. Future replications should examine how cultural norms influence proxemic expectations \cite{andrist2015effects, winkle2022norm, komatsu2021blaming, baxter2016characterising}. Second, the study relied on a single narrative script. Different genres or competitive stakes might alter users' tolerance for interactional costs \cite{bowman2025transformative, lopes2025closing}. For example, efficiency might be prioritized over immersion in fast-paced settings \cite{yang2021competitive, zorner2021immersive, ng2024role}. Future investigations should examine whether the social buffer of digital mediation is preferred in cooperative versus competitive tasks to an equal extent \cite{javed2024modeling, weisswange2023could}. Third, POIROT is a custom prototype; its physical movement inherently increased response latency and constituted an intrinsic temporal difference compared to the app \cite{liu2023defining, stedtler2024there}. The observed friction might thus be partially temporal. Future work should decouple tangibility from temporal duration (e.g., by introducing artificial delays) to isolate the pure effects of materiality from interaction time \cite{kappler2023optimizing, eizicovits2018robotic}. Fourth, due to the intensive session length, we prioritized NARS to specifically capture threat sensitivity and avoidance motivation, which is theoretically central to how users manage proxemic demands \cite{nomura2006measurement, nomura2007experimental, miller2021more}. Unlike general attitude scales (e.g., GAToRS) which measure broad valence, NARS provides a more direct operationalization of the anxiety-driven mechanism rendering direct tangible interaction psychologically costly for specific participants \cite{koverola2022general, nomura2007experimental}. However, we acknowledge that complementary constructs, such as RoSAS, could offer additional granularity \cite{carpinella2017robotic}. Future studies should include these measures to disentangle whether the interactional tax of tangible delivery primarily impacts competence, warmth, or trustworthiness \cite{pan2019fast, miller2021more}. Fifth, given the brief experiment session, it remains unclear whether the proxemic demands experienced by high NARS users would attenuate over time as they habituate to the presence of the robot or if the novelty bonus would fade with repeated exposure for low NARS users \cite{laban2022user, rakhymbayeva2021long, stower2021meta, ligthart2022memory}. Finally, we acknowledge a qualitative asymmetry. Physical-Card condition feedback was rich and experiential, whereas In-App's feedback was utilitarian. This imbalance prevented symmetrical thematic comparison but reflects a phenomenological reality, which indicates that screens may lack the material weight necessary to evoke the sense of occasion observed in tangible HRI while ensuring efficiency.}
+
+\noindent \textbf{Future Directions.} Beyond addressing the limitations above, future research should further theorize interaction modality as a critical design variable in group HRI. Applying similar paradigms in healthcare or education would help test whether the social buffering effect of mediated interaction extends to other scenarios in which user anxiety is prevalent. Moreover, advancing methodological rigor through cross-laboratory replications, longitudinal designs, and open science practices will be essential to build cumulative validity in HRI \cite{strait2020three, gunes2022reproducibility, irfan2025lifelong, leichtmann2022crisis}.
+
+\noindent \textbf{Conclusion.} This study investigated how a robot's interaction modality for delivering game content (direct tangible vs. digitally mediated) impacted user experience in a collaborative multi-party murder mystery game. Although no significant main effect of delivery modality was observed, participants' experiences were reliably moderated by NARS: for users with positive attitudes, direct tangible interaction was received neutrally or positively, whereas the same interaction undermined immersion and game experience for users with high NARS. Synthesizing our findings, this work makes three distinct contributions. Empirically, it establishes evidence from a novel controlled comparison of direct versus mediated interaction in a complex co-located context. Theoretically, we advance a psychological distance framework to demonstrate how interaction modality acts as a double-edged sword: direct tangibility provides engagement through physical reality but imposes higher proxemic demands, though digital mediation serves as a protective social buffer for anxious users. From a design standpoint, our work highlights the limits of "one-size-fits-all" systems and underscores the need for adaptive social robots that can tailor their interaction modality by switching between different channels to accommodate the diverse psychological profiles of groups.
+
+\vspace{-12pt}
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+This work was supported by the Beijing Natural Science Foundation-Youth Project (Grant No. 4254082). We thank the participants and those who assisted with the study logistics. Part of the language editing was supported by Gemini 3 Pro. We also appreciate the anonymous reviewers for their constructive feedback.
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\balance
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+
+%%
+%% If your work has an appendix, this is the place to put it.
+% \appendix
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf-authordraft.tex'.

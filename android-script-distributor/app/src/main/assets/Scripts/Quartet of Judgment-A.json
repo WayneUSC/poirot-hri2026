@@ -1,0 +1,89 @@
+{
+  "name": "Quartet of Judgment-A",
+  "tags": "Chinese Restoration Deduction Intermediate",
+  "rating": "Highly Praised 8.4",
+  "imageResName": "quartet_of_judgment",
+  "poster": "Scripts/Images/Quartet of Judgment-A/poster.png",
+  "playerInfo": "4 Males 2 Females 1.5 Hours Intermediate",
+  "intro": "In the heart of a bitter winter in Rubing City, a quiet fundraising gathering at Xiudang Mountain Church becomes the eve of a shocking murder. A suspect is arrested, a body unearthed, witnesses step forward—six individuals take the stage as the trial approaches. Though they appear to be strangers, each harbors a past tangled with silent, unseen threads.\n\nIn the courtroom, reason and emotion collide. Yet the truth seems to slip through the cracks between testimonies. Is this a chance reunion—or a carefully orchestrated design? Do they seek justice—or hide something darker?\nThis trial goes far beyond the law…",
+  "targetActivityName": "Sript_detail",
+  "roles": ["Ye Caiyang", "Tang Yali", "Fang Qi", "Chu Mihe", "Yin Hong", "Chen Haotong"],
+  "character_posters": {
+    "character1": "Scripts/Images/Quartet of Judgment-A/characters/Ye Caiyang.jpg",
+    "character2": "Scripts/Images/Quartet of Judgment-A/characters/Tang Yali.jpg",
+    "character3": "Scripts/Images/Quartet of Judgment-A/characters/Fang Qi.jpg",
+    "character4": "Scripts/Images/Quartet of Judgment-A/characters/Chu Mihe.jpg",
+    "character5": "Scripts/Images/Quartet of Judgment-A/characters/Yin Hong.jpg",
+    "character6": "Scripts/Images/Quartet of Judgment-A/characters/Chen Haotong.jpg"
+  },
+  "acts": [
+    { "number": 1, "name": "Trial" }
+  ],
+  "totalClueStages": 1,
+  "clueStages": [
+    { "number": 1, "name": "Trial" }
+  ],
+  "roleScripts": {
+    "Ye Caiyang": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Tang Yali": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Fang Qi": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Chu Mihe": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Yin Hong": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "Chen Haotong": {
+      "1": "https://example.com/role-script.pdf"
+    }
+  },
+  "publicClueImageURLsDict": {
+    "1": ["https://example.com/clue-card.jpg", 
+          "https://example.com/clue-card.jpg",
+          "https://example.com/clue-card.jpg",
+          "https://example.com/clue-card.jpg", 
+          "https://example.com/clue-card.jpg", 
+          "https://example.com/clue-card.jpg"]
+  },
+  "privateClueImageURLsDict": {
+    "Ye Caiyang": {
+      "1": ["https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg"]
+    },
+    "Yin Hong": {
+      "1": ["https://example.com/clue-card.jpg"]
+    },
+    "Chen Haotong": {
+      "1": ["https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg"]
+    },
+    "Tang Yali": {
+      "1": ["https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg"]
+    },
+    "Fang Qi": {
+      "1": ["https://example.com/clue-card.jpg"]
+    },
+    "Chu Mihe": {
+      "1": ["https://example.com/clue-card.jpg",
+            "https://example.com/clue-card.jpg"]
+    }
+  }
+}

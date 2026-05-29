@@ -1,0 +1,69 @@
+{
+  "name": "审判四重奏-B",
+  "tags": "中式 还原 演绎法 中等",
+  "rating": "强烈推荐 8.4",
+  "imageResName": "quartet_of_judgment_b",
+  "poster": "Scripts/Images/审判四重奏-B/poster.png",
+  "playerInfo": "4 Males 2 Females 1.5 Hours Intermediate",
+  "intro": "鲁滨市正值寒冬，秀砀山教堂，一场平静的募捐集会，却成为命案发生的前夜。嫌疑人被捕、尸体被挖出、证人相继出现——随着庭审的临近，六位当事人接连登场，他们彼此之间看似毫无瓜葛，却都藏着过往难以言说的牵连。\n\n在法庭之上，他们将交锋于理性与情感之间，真相却似乎总是游走在证词的缝隙之外。是偶然的重逢，还是精心的布局？是为正义发声，还是掩盖罪恶？这一场审判，远不止于法律……",
+  "targetActivityName": "Sript_detail",
+  "roles": ["叶才阳", "唐雅莉", "方崎", "楚幂鹤", "殷弘", "陈浩桐"],
+  "character_posters": {
+    "character1": "Scripts/Images/审判四重奏-B/characters/叶才阳.jpg",
+    "character2": "Scripts/Images/审判四重奏-B/characters/唐雅莉.jpg",
+    "character3": "Scripts/Images/审判四重奏-B/characters/方崎.jpg",
+    "character4": "Scripts/Images/审判四重奏-B/characters/楚幂鹤.jpg",
+    "character5": "Scripts/Images/审判四重奏-B/characters/殷弘.jpg",
+    "character6": "Scripts/Images/审判四重奏-B/characters/陈浩桐.jpg"
+  },
+  "acts": [
+    { "number": 1, "name": "庭审" }
+  ],
+  "totalClueStages": 1,
+  "clueStages": [
+    { "number": 1, "name": "庭审" }
+  ],
+  "roleScripts": {
+    "叶才阳": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "唐雅莉": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "方崎": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "楚幂鹤": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "殷弘": {
+      "1": "https://example.com/role-script.pdf"
+    },
+    "陈浩桐": {
+      "1": "https://example.com/role-script.pdf"
+    }
+  },
+  "publicClueImageURLsDict": {
+    "1": []
+  },
+  "privateClueImageURLsDict": {
+    "叶才阳": {
+      "1": []
+    },
+    "殷弘": {
+      "1": []
+    },
+    "陈浩桐": {
+      "1": []
+    },
+	"唐雅莉": {
+      "1": []
+    },
+	"方崎": {
+      "1": []
+    },
+	"楚幂鹤": {
+      "1": []
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.DS_Store
+
+# Android
+android-script-distributor/.gradle/
+android-script-distributor/**/build/
+android-script-distributor/app/google-services.json
+android-script-distributor/*.apk
+
+# Xcode
+ios-gaze-display/**/xcuserdata/
+ios-gaze-display/**/*.xcuserstate
+ios-gaze-display/DerivedData/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Data and local secrets
+*.key
+*.pem
+*.p12
+*.env
+participant-data/
+raw-recordings/
+private-assets/

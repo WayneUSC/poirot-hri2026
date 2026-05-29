@@ -1,0 +1,688 @@
+\DocumentMetadata{
+  pdfversion=2.0,pdfstandard=ua-2,
+  testphase={phase-III,firstaid,math,title}
+}
+%%
+%% This is file `sample-sigconf-authordraft.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,proceedings,bibtex,authordraft')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf-authordraft.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+% \documentclass[manuscript, screen, review]{acmart}
+% \documentclass[manuscript, screen, review, anonymous]{acmart}
+% \documentclass[sigconf]{acmart}
+% \documentclass[sigconf, review, anonymous]{acmart}
+% \documentclass[sigconf,anonymous]{acmart}
+\documentclass[sigconf,screen]{acmart-tagged}
+% \documentclass[sigconf,authordraft]{acmart}
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{enumitem}
+% 引入颜色包
+\usepackage{xcolor}
+% 定义一个命令 \rev (代表 revision)
+% 使用方法:\rev{这里是修改过的内容}
+% 目前设置为蓝色 (blue),你也可以改成 red 或 magenta
+% \newcommand{\rev}[1]{\textcolor{blue}{#1}}
+% 以后如果是定稿模式,想取消颜色,把上面那行注释掉,启用下面这行即可 ---
+\newcommand{\rev}[1]{#1}
+
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{cc}
+\setcctype{by}
+\acmDOI{10.1145/3757279.3788663}
+\acmYear{2026}
+\copyrightyear{2026}
+\acmISBN{979-8-4007-2128-1/2026/03}
+\acmConference[HRI '26]{Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction}{March 16--19, 2026}{Edinburgh, Scotland, UK}
+\acmBooktitle{Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26), March 16--19, 2026, Edinburgh, Scotland, UK}
+\received{2025-09-30}
+\received[accepted]{2025-12-23}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title[Appendix for "POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation...]{Appendix for "POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation in Multi-party Murder Mystery Games"}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Wen Chen}
+\orcid{0009-0002-4204-8777}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{chenwen_bot@mail.tsinghua.edu.cn}
+
+\author{Rongxi Chen}
+\orcid{0009-0009-7298-7223}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{vichenxi@vanguardadvisories.com}
+
+\author{Shankai Chen}
+\orcid{0009-0002-3237-0383}
+\affiliation{%
+  \institution{University of Pennsylvania}
+  \city{Philadelphia}
+  \country{USA}
+}
+\email{skchen@seas.upenn.edu}
+
+\author{Huiyang Gong}
+\orcid{0009-0000-5211-0525}
+\affiliation{%
+  \institution{Syracuse University}
+  \city{Syracuse}
+  \country{USA}
+}
+\email{huyago@upenn.edu}
+
+\author{Minghui Guo}
+\orcid{0009-0004-9298-8438}
+\affiliation{%
+  \institution{National University of Singapore}
+  \city{Singapore}
+  \country{Singapore}
+}
+\email{mguo77@u.nus.edu}
+
+\author{Yingri Xu}
+\orcid{0009-0008-1495-5058}
+\affiliation{%
+  \institution{Royal College of Art}
+  \city{London}
+  \country{United Kingdom}
+}
+\email{yingri.xu@network.rca.ac.uk}
+
+\author{Xintong Wu}
+\orcid{0009-0009-6397-034X}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{wuxt22@mails.tsinghua.edu.cn}
+
+\author{Xinyi Fu}
+\authornote{Corresponding Author.}
+\orcid{0000-0001-6927-0111}
+\affiliation{%
+  \institution{Tsinghua University}
+  \city{Beijing}
+  \country{China}
+}
+\email{fuxy@tsinghua.edu.cn}
+
+\renewcommand{\shortauthors}{Chen et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+% \begin{abstract}
+
+% \end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+% \begin{CCSXML}
+% <ccs2012>
+%  <concept>
+%   <concept_id>00000000.0000000.0000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>500</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>300</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+% </ccs2012>
+% \end{CCSXML}
+
+% \ccsdesc[500]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc[300]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc[100]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+
+
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+% \keywords{Do, Not, Use, This, Code, Put, the, Correct, Terms, for,
+%   Your, Paper}
+% \keywords{Human-Robot Interaction, Social Robots, Embodied Interaction, Game Master}
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+
+% \received{20 February 2007}
+% \received[revised]{12 March 2009}
+% \received[accepted]{5 June 2009}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+% \begin{acks}
+% This work was supported by the Beijing Natural Science Foundation-Youth Project (Grant No. 4254082). We thank the participants and those who assisted with the study logistics. Part of the language editing was supported by Gemini 3 Pro. We also appreciate the anonymous reviewers for their constructive feedback.
+% \end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{sample-base}
+
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\section{Game Materials}
+\label{judgment quartet}
+\subsection{Plot Overview (No Spoilers)}
+\label{plot overview}
+Set in winter~2005 in Lubin City, the story begins with a murder during a church fund-raising event and gradually unveils the intertwined pasts of six key figures. Truth emerges only if players collaborate, challenge one another, and reconstruct the full timeline. The task focus is to co-construct the truth rather than simply identifying a murderer.
+
+%--------------------------------------------------
+
+\subsection{Role Overview}
+\label{role overview}
+The experimental script \emph{Judgment Quartet} involves six players, each of whom plays a fixed role and is immersed in a fictional court case. Five of the six characters were part of the same university cohort, while the defendant (Fang Qi) stood apart with no prior social ties. Each character has their own identity and core motivation, as shown in Table~\ref{tab:roster}:
+
+\begin{table}[h]
+\setlength{\tabcolsep}{13pt}
+\caption{Six‐Character Roster for \textit{Judgment Quartet}}
+\centering\footnotesize
+\label{tab:roster}
+\begin{tabularx}{\linewidth}{l l X}   % X 列自动拉伸
+\toprule
+\textbf{Role} & \textbf{Identity} & \textbf{Core Motivation}\\
+\midrule
+Fang~Qi      & Defendant          & Maintains innocence\\
+Tang~Yali    & Victim's daughter  & Justice for her father\\
+Ye~Caiyang   & Prosecutor         & Legal conviction\\
+Yin~Hong     & Defence atty.      & Overturn guilty verdict\\
+Chu~Mihe     & Nun / Witness      & Reveal complete truth\\
+Chen~Haotong & Police officer     & Support prosecution\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+
+%--------------------------------------------------
+\subsection{Clue Design and Information Matrix}
+\label{clues}
+
+\subsubsection{General Schema} 
+Each player received private clue cards containing privileged memories or investigative materials. Public testimonies were released by the robot judge after private clues delivery. Sample private clues for each role are provided in Table~\ref{tab:clues map}.
+
+\begin{table}[H]
+\caption{Sample private clues provided to each role}
+\label{tab:clues map}
+\centering\footnotesize
+\begin{tabularx}{\linewidth}{l X}
+\toprule
+\textbf{Role} & \textbf{Example Private Clue Excerpts}\\
+\midrule
+Ye~Caiyang (Prosecutor) & Vehicle CCTV logs, paint-scratch analysis, soil comparison, burial-path reconstruction\\
+Tang~Yali (Victim's Daughter) & Chapel layout constraints, dead-end passages, terrain preventing escape\\
+Fang~Qi (Defendant) & Fragmented memories of the parking lot\\
+Chu~Mihe (Nun / Witness) & Records of prior disturbances, detailed timeline of the evening\\
+Yin~Hong (Defence Lawyer) & Hidden evidence: trunk mat with victim's urine traces\\
+Chen~Haotong (Police) & Cause-of-death analysis, rope-soil forensics, missing earring, suspect bruises\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Design Principles}
+\begin{enumerate}[nosep]
+  \item Mild contradictions across roles were introduced to trigger cross‐checking.
+  \item Asymmetric information prevented any shared perspective.
+  \item Factual evidence was balanced with emotional bias.
+  \item Collaborative reasoning was promoted by piecing out truth as a whole.
+\end{enumerate}
+
+\subsubsection{Public Testimony Highlights} 
+Public testimony statements included witnesses' recollections of car movements, last-seen timings, and suspicions of a third person entering the church.
+
+\section{Setup Flow and Stimuli Illustrations}
+\label{app:setup}
+This appendix illustrates visual documentation of three elements in the study:
+(1) the standardized companion-app setup flow shown to all participants prior to clue delivery (Figure~\ref{fig:app_setup});
+(2) examples of the physical clue cards used in the Physical-Card condition (Figure~\ref{fig:physical_clues}); and
+(3) the digital clues interface used in the In-App condition (Figure~\ref{fig:app_clues}).
+For clarity, all the documentation is presented in the English version; during the study, participants interacted with a personalized interface in their native language. These artifacts correspond to the procedures described in Section~3.2.2 (Experimental Conditions) and Section~3.2.4 (Procedure).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.22\textwidth]{Room Creation.png}
+  \includegraphics[width=0.22\textwidth]{Room Entering.png}
+  \includegraphics[width=0.22\textwidth]{Role Selection.png}
+  \includegraphics[width=0.22\textwidth]{Script Reading.png}
+  \Description{Four sequential screenshots of the mobile app interface. (a) shows a "Create Game" screen with a green button and a Room ID. (b) shows a "Join Game" screen with an input field. (c) displays a list of character names with radio buttons for selection. (d) shows a sample of detailed script page (featuring a photo of a male character in a suit named Ye Caiyang.)}
+  \caption{Companion app setup inter
+  face in sequence: (a) room creation interface, (b) room joining interface, (c) role selection interface, and (d) example of a script reading interface (see Section~3.2.3 for details). 
+  \textit{Note:} In the Physical-Card condition, the "Clues" button was also present in the script reading interface but inactive, since all clues were provided via physical delivery.}
+  \label{fig:app_setup}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.18\textwidth]{Physical Card-Negative.png}
+  \includegraphics[width=0.18\textwidth]{Physical Card-Positive.png}
+  \Description{A picture showing the front and back of a sample laminated clue card. The left image (front) contains text labeled "Exclusive Clue for the Police -- Clue 3" followed by narrative text about a vehicle. The right image (back) shows the same label on a plain gray background without the narrative text.}
+  \caption{Examples of physical clue cards (6.3\,cm $\times$ 8.8\,cm, laminated): (a) front side showing clue content, and (b) reverse side with neutral labeling. Private clues were dispensed individually to players, while public cards (eight per session) were dispensed at the table center before script reading started.}
+  \label{fig:physical_clues}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.18\textwidth]{Digital Clue Gallary.png}
+  \includegraphics[width=0.18\textwidth]{Digital Clue Detail.png}
+  \Description{Two screenshots of the digital clue interfaces on a tablet. The left image shows a scrollable gallery view with two columns of text blocks representing different testimonies. The right image shows a detailed view where a single clue titled "Witness Testimony 4" is displayed in large text.}
+  \caption{Digital clues panel: (a) overview of multiple digital clues, and (b) detail view of a single clue, opened by tapping the corresponding item from (a).}
+  \label{fig:app_clues}
+\end{figure}
+
+
+\section{Mechanical and Interaction Specifications}
+\label{app:specs}
+This appendix provides the detailed mechanical and electrical specifications of the custom-built robot platform, POIROT (Figure~\ref{fig:robot}).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.20\textwidth]{POIROT.png}
+  \Description{A front-facing picture of POIROT, which is a white, 3D-printed social robot. It has a smooth, rounded shape with small flipper arms. Its face is a black iPhone screen displaying two pixelated eyes. To evoke the style of Agatha Christie’s detective Poirot, a symbolic mustache decal was added beneath its display screen.}
+  \caption{The POIROT social robot used in the study, shown in its default idle posture. To evoke the style of Agatha Christie’s detective Poirot, a symbolic mustache decal was added beneath its display screen.
+}
+  \label{fig:robot}
+\end{figure}
+
+\subsection{Components Overview}
+\begin{enumerate}
+    \item \textit{Overall dimensions:} 50.1 cm tall; circular mobile base 34.3 cm in diameter.
+    \item \textit{Shell:} 3D-printed PLA, modeled in Rhino.
+    \item \textit{Locomotion:} Differential-drive base derived from the open-source FishBot platform.
+    \item \textit{Arms:} Two 2-DOF arms for idle gesturing.
+    \item \textit{Clue Cards dispenser:} Custom 3D-printed dispensing module embedded in the robot's abdomen. A friction roller pushed out laminated cards.
+    \item \textit{Voice interaction module:} ESP32-S3 microcontroller with microphone, speaker, and amplifier supporting ASR, TTS, and dialogue management.
+\end{enumerate}
+Of these components, we elaborate in detail on the eye-tracking and gaze module, the clue cards dispenser, and voice interaction module, as they are most relevant to the user study. Other parts are not unfolded here since they served auxiliary or standardized functions.
+
+\subsection{Eye-Tracking and Gaze Module}
+\label{app:gaze}
+We deployed the eye-tracking function on an iPhone 12 Pro device embedded in the POIROT’s head. The application used Apple’s Vision framework in Swift for real-time facial feature point detection, with a focus on the positions of both eyes. The extracted gaze data was used to dynamically adjust the robot GM’s eyes to ensure they remained aligned with participants’ faces. To enhance natural appearance, a smoothing algorithm was applied to avoid jittery eye movements, and gaze offsets were constrained within a certain range to prevent abrupt or unnatural shifts. In addition, the system simulated random blinking behaviors at intervals between three and seven seconds to conform to natural human gaze habits. Blinking animations were implemented by temporarily shrinking eye vertical height and then restoring it to the original state, producing a lifelike appearance and reducing mechanical visual artifacts. 
+
+\subsection{Clue Cards Dispenser}
+The clue cards dispenser module (Figure~\ref{fig:dispenser_photo}) was adapted for integration into the POIROT system. In this adaptation, only the upper friction-based card delivery mechanism was retained. A GA12-N20 micro gear motor (6\,V, 50\,rpm) was mounted adjacent to a 3D-printed PLA housing and mechanically coupled to a friction roller positioned above a vertically stacked array of laminated clue cards.
+
+To enable single-card delivery per cycle, the roller was fitted with rubber O-rings, which generated sufficient frictional force during rotation to advance one card at a time. The motor received power from a standard USB-A 5\,V supply, routed through a simple SPST mechanical toggle switch that allowed manual actuation. The system design prioritized simplicity and reliability, operating without a microcontroller (MCU) or electronic feedback. Timing was manually tuned to match a consistent human-paced rhythm, with a typical dispensing duration of approximately \(1.2\,\text{s}\) per card. A complete bill of materials (BOM) is provided in Table~\ref{tab:dispenser_bom}.
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.40\textwidth]{Mechanical Dispenser.png}
+  \Description{A composite image showing the technical design of the dispenser. The left side shows a 3D physical implementation of the clue cards dispenser containing a stack of cards and a friction roller mechanism. The right side is a schematic diagram illustrating the circuit, connecting a USB power source, a push switch, and a motor to the friction roller.}
+  \caption{The custom-built clue dispensing module: (left) physical implementation with friction roller above laminated card stack, and (right) electrical diagram showing USB-powered GA12-N20 motor, friction roller, and inline SPST toggle switch. No MCU or feedback mechanism was used.}
+  \label{fig:dispenser_photo}
+\end{figure}
+
+\begin{table}[ht]
+  \centering
+  \caption{Bill of Materials for Clue Cards Dispenser Module}
+  \label{tab:dispenser_bom}
+  \begin{tabular}{|l|l|c|p{4.5cm}|}
+    \hline
+    \textbf{Component} & \textbf{Specification} & \textbf{Qty}\\
+    \hline
+    Motor & GA12-N20, 6V, 50rpm DC motor & 1 \\
+    \hline
+    Friction Roller & 3D-printed + rubber O-rings & 1  \\
+    \hline
+    Card Housing & PLA, 3D-printed structure & 1\\
+    \hline
+    Switch & SPST toggle switch & 1\\
+    \hline
+    Power Supply & USB-A 5V (adapter or power bank) & 1\\
+    \hline
+    Wiring & 2-pin cable & 1\\
+    \hline
+  \end{tabular}
+\end{table} 
+
+\subsection{Voice Interaction Module}
+\label{voice interaction module}
+The voice system was implemented on a dedicated ESP32-S3-N16R8 microcontroller with the following components:  
+\begin{itemize}
+    \item \textit{Audio input:} INMP441 I\textsuperscript{2}S digital microphone.  
+    \item \textit{Audio output:} MAX98357 digital amplifier with a 3W speaker.  
+\end{itemize}
+
+The processing pipeline involved four stages: (1) voice activity detection (VAD), (2) streaming automatic speech recognition (ASR), (3) dialogue management and decision-making via an open-sourced LLM-based agent, \textit{Xiaozhi}, and (4) text-to-speech (TTS) synthesis. For consistency, the LLM was pre-loaded with the full script of \textit{Judgment Quartet}, including character backgrounds and conversational guidelines. A barge-in mechanism supported natural turn-taking, enabling participants to interrupt the robot's speech mid-utterance.
+
+\subsection{Notes}
+In the actual study, participants only interacted with POIROT through its observable behaviors (gaze, speech, movement, and card delivery). Further design and modeling diagrams are omitted here, as they are not directly related to the interaction study. To support transparency and reproducibility, the underlying CAD models, wiring diagrams, and control code will be released in a public repository upon acceptance of this paper.
+
+%--------------------------------------------------
+
+\section{Questionnaires}
+\label{appendix:questionnaires}
+
+\subsection{Narrative Immersion Scale}
+\label{survey:immersion}
+\noindent
+Instructions: Please indicate the extent to which you agree or disagree with each statement based on your experience in the game. (1 = Strongly disagree, 7 = Strongly agree)
+
+\begin{enumerate}
+    \item I was rarely distracted by outside factors during the game.
+    \item When the robot GM asked questions, I was immediately able to engage and respond.
+    \item I felt a strong emotional connection with the character I played.
+    \item As the story developed, I could feel the emotional changes of the character.
+    \item The robot GM’s questions and feedback deepened my emotional experience.
+    \item I lost track of time during the game.
+    \item After the game, it felt like time passed faster than expected.
+    \item I always felt that the game time was too short and wished it could continue.
+    \item During the game, I almost forgot about the real world around me.
+    \item I felt as if I was completely inside the world of the character.
+    \item The presence of the robot GM helped immerse me deeper into the fictional story context.
+    \item I felt that my choices or decisions could influence the storyline.
+    \item The way the robot GM asked questions made me feel that my role was important to the plot.
+    \item I felt the robot GM’s responses were genuine rather than purely pre-programmed.
+    \item Overall, I felt a strong sense of narrative immersion throughout the game.
+\end{enumerate}
+
+\rev{The Narrative Immersion Scale (15 items) demonstrated high internal consistency (Cronbach's $\alpha$ = 0.93). EFA exhibited the suitability of the data ($KMO$ = 0.84, Bartlett's Test $p$ < 0.001). A dominant single factor emerged (Eigenvalue = 7.88), explaining 49.6\% of the variance. All items showed strong factor loadings (>0.40).}
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \small
+        \begin{tabular}{lc}
+            \toprule
+            \textbf{Item ID} & \textbf{Factor Loading} \\
+            \midrule
+            Item 1 & 0.419 \\
+            Item 2 & 0.630 \\ 
+            Item 3 & 0.704 \\
+            Item 4 & 0.737 \\
+            Item 5 & 0.847 \\
+            Item 6 & 0.680 \\
+            Item 7 & 0.479 \\
+            Item 8 & 0.511 \\
+            Item 9 & 0.734 \\
+            Item 10 & 0.853 \\
+            Item 11 & 0.813 \\
+            Item 12 & 0.651 \\
+            Item 13 & 0.792 \\
+            Item 14 & 0.622 \\
+            Item 15 & 0.891 \\
+            \bottomrule
+        \end{tabular}
+        \captionof{table}{\rev{Pattern Matrix for Narrative Immersion.}}
+        \label{tab:loadings_immersion}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{scree_plot_narrative_immersion_scale.pdf}
+        \Description{A scree plot showing eigenvalues for 15 components. The first point is very high at approximately 7.9, while the second point drops sharply to near 1.3, and subsequent points flatten out below 1.0, indicating a single dominant factor.}
+        \caption{\rev{Scree Plot for Narrative Immersion.}}
+        \label{fig:scree_immersion}
+    \end{minipage}
+\end{figure}
+
+
+\subsection{Social Presence Scale}
+\label{survey:presence}
+\noindent
+Instructions: Please indicate the extent to which you agree or disagree with each statement based on your experience in the game. (1 = Strongly disagree, 7 = Strongly agree)
+
+\begin{enumerate}
+    \item During the game, I felt that the GM was 'present in the same space' with me and paying attention to me.
+    \item My actions or responses influenced how the GM paid attention to or responded to me afterward.
+    \item I viewed the GM not just as an information provider, but as an entity with an identity and role.
+    \item The GM’s reactions during the game made me feel consistently noticed rather than ignored.
+    \item I was willing to accept the GM as a key host of this game and would even look forward to playing with them again.
+\end{enumerate}
+
+\rev{The Social Presence Scale (5 items) showed good reliability (Cronbach's $\alpha$ = 0.83). Data suitability was confirmed ($KMO$ = 0.79, Bartlett's Test $p$ < 0.001). Analysis revealed a clear one-factor structure explaining 52.0\% of the variance.}
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \small
+        \begin{tabular}{lc}
+            \toprule
+            \textbf{Item ID} & \textbf{Factor Loading} \\
+            \midrule
+            Item 1 & 0.821 \\
+            Item 2 & 0.723 \\
+            Item 3 & 0.712 \\
+            Item 4 & 0.827 \\
+            Item 5 & 0.458 \\
+            \bottomrule
+        \end{tabular}
+        \captionof{table}{\rev{Pattern Matrix for Social Presence.}}
+        \label{tab:loadings_social}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{scree_plot_social_presence_scale.pdf}
+        \Description{A scree plot for 5 components. The first component has an eigenvalue of roughly 3.0. The second component drops below the red threshold line of 1.0 (to $\approx$ 0.8), confirming a single-factor structure.}
+        \caption{\rev{Scree Plot for Social Presence.}}
+        \label{fig:scree_social}
+    \end{minipage}
+\end{figure}
+
+\subsection{Game Experience Scale}
+\label{survey:mmg}
+\noindent
+Instructions: Please answer honestly. There are no right or wrong answers. 
+
+\subsubsection{Game Experience and Robot Interaction Items  (1 = Strongly disagree, 7 = Strongly agree)} 
+\noindent
+Items 1–7 were administered to all participants. Items 8–11 were only administered to those in the Physical-Card condition, as they specifically concerned the physical clues delivery with the robot.
+\begin{enumerate}
+    \item I felt deeply immersed in the storyline during the game.
+    \item The clues conveyed a strong sense of presence in the story.
+    \item The delivery of clues felt natural and smooth, without interrupting my gameplay.
+    \item The way clues were delivered enhanced my role immersion.
+    \item I found it easier to remember the content of the clues I received.
+    \item I was satisfied with the efficiency of the clue delivery method.
+    \item The process of receiving clues did not make me feel distracted or disconnected.
+    \item I felt that the robot had a certain level of character or personality.
+    \item When the robot approached and handed me a clue, I experienced a special sense of ritual.
+    \item The way the robot provides information makes me feel that the information is reliable.
+    \item I would like to see more games using physical robots as clue deliverers or hosts in the future.
+\end{enumerate}
+
+\rev{The Core Game Experience Scale (7 items) demonstrated high internal consistency (Cronbach's $\alpha$ = 0.87). The data exhbited good suitability for factor analysis ($KMO$ = 0.81, Bartlett's Test $p$ < 0.001), yielding a single-factor structure that explained 58.5\% of the variance. Note that the 4 additional items specific to the Physical-Card condition are excluded from this factor analysis. Regarding the Tangibility Subscale (Items 8--11), which was administered exclusively to the Physical-Card condition, these items also demonstrated high internal consistency (Cronbach's $\alpha$ = 0.84). They were excluded from the main factor analysis as they were not completed by the full sample.}
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \small
+        \begin{tabular}{lc}
+            \toprule
+            \textbf{Item ID} & \textbf{Factor Loading} \\
+            \midrule
+            Item 1 & 0.751 \\
+            Item 2 & 0.825 \\
+            Item 3 & 0.888 \\
+            Item 4 & 0.904 \\
+            Item 5 & 0.547 \\
+            Item 6 & 0.696 \\
+            Item 7 & 0.681 \\
+            \bottomrule
+        \end{tabular}
+        \captionof{table}{\rev{Pattern Matrix for Game Experience (Core).}}
+        \label{tab:loadings_game}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{scree_plot_game_experience_scale_core_7_items.pdf}
+        \Description{A scree plot for 7 components. The first component starts high at approximately 4.7. The second component drops significantly below 1.0 (to $\approx$ 0.8), followed by a flat tail, indicating one main factor.}
+        \caption{\rev{Scree Plot for Game Experience.}}
+        \label{fig:scree_game}
+    \end{minipage}
+\end{figure}
+
+\subsubsection{General Feedback (Open-ended)}
+\begin{enumerate}
+    \item Please briefly describe your overall impression of the clue delivery method used in this game.
+    \item Have you ever been confused by the form or timing of clue distribution? Does this affect your reasoning rhythm or immersion?
+    \item In this game, is there a clue distribution that impressed you? Please describe the situation and your reaction.
+    \item What suggestions do you have or hope to improve on the form, rhythm or expression of clue distribution?
+\end{enumerate}
+
+\section{Multilevel Linear Model Specification}
+To analyze each participant $i$ nested within gameplay session $j$, we employed a multilevel linear model to predict outcome variables (e.g., Narrative Immersion) as follows:
+\label{mlm}
+\begin{align}
+Y_{ij} = \ & \beta_0 + \beta_1 \cdot \text{Session}_{ij} + \beta_2 \cdot \text{Moderator}_{ij} \nonumber \\
+          & + \beta_3 \cdot (\text{Session}_{ij} \times \text{Moderator}_{ij}) + u_j + \epsilon_{ij}
+\end{align}
+
+\noindent
+Where:
+\begin{itemize}
+    \item $Y_{ij}$: outcome score (e.g., Narrative Immersion) for participant $i$ in session $j$
+    \item $\text{Session}_{ij}$: experimental condition (0 = In-App, 1 = Physical-Cards)
+    \item $\text{Moderator}_{ij}$: moderator variable (e.g., NARS or Big Five personality traits)
+    \item $\text{Session}_{ij} \times \text{Moderator}_{ij}$: interaction term for testing moderation effects
+    \item $u_j \sim \mathcal{N}(0, \sigma^2_u)$: random intercept for each gameplay session
+    \item $\epsilon_{ij} \sim \mathcal{N}(0, \sigma^2)$: individual-level residual
+\end{itemize}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf-authordraft.tex'.

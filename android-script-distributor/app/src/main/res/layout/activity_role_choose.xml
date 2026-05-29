@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Role_choose">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:backgroundTint="#FFFFFF"
+                android:contentDescription="Back Button"
+                android:drawableLeft="@drawable/chat_message_incoming_bg"
+                android:text="Return"
+                android:textColor="#1E90FF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 标题栏 -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Role Choose"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+        <!-- RecyclerView 展示角色列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- firebase连接提示 -->
+        <TextView
+            android:id="@+id/connection_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Connecting……"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <!-- 当前选中角色提示 -->
+        <TextView
+            android:id="@+id/tv_selected_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Please choose a character"
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:gravity="center"/>
+        <!-- 准备按钮 -->
+        <Button
+            android:id="@+id/btn_ready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:backgroundTint="#000000"
+            android:textColor="@android:color/white"
+            android:enabled="true"
+            android:visibility="gone"
+            android:layout_margin="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

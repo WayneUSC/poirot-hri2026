@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated HRI 2026 paper."
+title: "POIROT HRI 2026 Reproducibility Package"
+authors:
+  - family-names: Chen
+    given-names: Wen
+  - family-names: Chen
+    given-names: Rongxi
+  - family-names: Chen
+    given-names: Shankai
+  - family-names: Gong
+    given-names: Huiyang
+  - family-names: Guo
+    given-names: Minghui
+  - family-names: Xu
+    given-names: Yingri
+  - family-names: Wu
+    given-names: Xintong
+  - family-names: Fu
+    given-names: Xinyi
+doi: 10.1145/3757279.3788663
+date-released: 2026-05-29
+url: "https://github.com/WayneUSC/poirot-hri2026-reproducibility"
+preferred-citation:
+  type: conference-paper
+  title: "POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation in Multi-party Murder Mystery Games"
+  authors:
+    - family-names: Chen
+      given-names: Wen
+    - family-names: Chen
+      given-names: Rongxi
+    - family-names: Chen
+      given-names: Shankai
+    - family-names: Gong
+      given-names: Huiyang
+    - family-names: Guo
+      given-names: Minghui
+    - family-names: Xu
+      given-names: Yingri
+    - family-names: Wu
+      given-names: Xintong
+    - family-names: Fu
+      given-names: Xinyi
+  collection-title: "Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction"
+  year: 2026
+  doi: 10.1145/3757279.3788663
