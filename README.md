@@ -5,6 +5,12 @@ This repository contains technical materials for reproducing the robot-side inte
 **POIROT: Investigating Direct Tangible vs. Digitally Mediated Interaction and Attitude Moderation in Multi-party Murder Mystery Games**  
 Wen Chen et al., HRI 2026.
 
+## Paper
+
+- [arXiv preprint](https://arxiv.org/abs/2603.08136)
+- [ACM Digital Library](https://dl.acm.org/doi/10.1145/3757279.3788663)
+- [ResearchGate full text](https://www.researchgate.net/profile/Xinyi-Fu-7/publication/402209331_POIROT_Investigating_Direct_Tangible_vs_Digitally_Mediated_Interaction_and_Attitude_Moderation_in_Multi-party_Murder_Mystery_Games/links/69c104ae3c6189430669c426/POIROT-Investigating-Direct-Tangible-vs-Digitally-Mediated-Interaction-and-Attitude-Moderation-in-Multi-party-Murder-Mystery-Games.pdf)
+
 The package focuses on reproducibility of the robot platform, companion app, tangible clue delivery, gaze display, voice interaction architecture, and study procedure. It intentionally excludes private credentials, participant data, travel/admin files, raw videos, and third-party dependency folders.
 
 ## Repository Layout
